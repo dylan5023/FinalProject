@@ -1,4 +1,23 @@
 // TABLET VERSION
 @media (min-width: $tablet) {
-
+  body {
+    > aside {
+      > ul {
+        justify-content: space-between;
+        column-gap: 0;
+      }
+      > ul:last-child {
+        width: 35%;
+      }
+      li {
+        width: 80%;
+      }
+      a {
+        font-size: 30px;
+      }
+      [class*="fa-"]{
+        font-size: 35px;
+      }
+    }
+  }
 }

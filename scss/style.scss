@@ -1,11 +1,11 @@
 // COMMON 
-@import './mixins';
-@import './normailze';
 @import './variables';
+@import './mixins';
+@import './normalize';
 
 
 
 // VERSION
 @import './devices/mobile';
-// @import './devices/tablet';
-// @import './devices/desktop';
+@import './devices/tablet';
+@import './devices/desktop';

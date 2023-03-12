@@ -1,4 +1,130 @@
 // MOBILE VERSION
 @media (min-width: $mobile) {
+  
+  body {
+    @include flexColumn;
+  }
+  
+  body > nav > aside,
+  body > aside,
+  body > aside > ul,
+  body > aside li {
+    @include center;
+  }
+  main {
+    flex-wrap: wrap;
+  }
+
+  body {
+    > aside {
+      display: flex;
+      justify-content: space-between;
+      background-color: $mainColor;
+      row-gap: 2vh;
+      width: 100%;
+      height: 10vh;
+      color: $fontColor;
+      > ul {
+        display: flex;
+        width: 50%;
+        font-weight: 600;
+      }
+      > ul:last-child {
+        width: 40%;
+      }
+      li {
+        display: flex;
+        column-gap: 1vh;
+        width: 100%;
+        list-style: none;
+      }
+      a {
+        font-size: 18px;
+        color: $fontColor;
+        text-decoration: none;
+        transition: .5s;
+      }
+      i {
+        text-decoration: none;
+      }
+      [class*="fa-"]{
+        display: flex;
+        @include center;
+        font-size: 23px;
+        transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
+      }
+    }
+  }
+
+  /* NAV  */
+  body {
+    > nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding-left: 2%;
+      height: 10vh;
+      width: 95%;
+      > aside {
+        display: flex;
+        column-gap: 1vh;
+        color: $fontColor;
+      }
+      i {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 30px;
+        font-weight: 800; 
+      }
+    }
+  }
+  nav > a,
+  nav > ul {
+    display: none;
+  }
+  details {
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    cursor: pointer;
+    > ul {
+      background-color: $fontColor;
+      width: 100%;
+      position: absolute;
+    }
+    li {
+      display: flex;
+    }
+    a {
+      width: 100%;
+      padding: 5%;
+      text-align: left;
+      color: whitesmoke;
+      font-size: 20px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: .5s;
+    }
+    a:hover {
+      color: black;
+      background-color: $mainColor;
+    }
+  }
+  summary {
+    border: 1px solid gainsboro;
+    padding: 2% 3%;
+    font-size: 26px;
+    transition: .5s;
+    color: dimgray;
+    &:hover {
+      background-color: $mainColor;
+      color: whitesmoke;
+    }
+  }
 
 }
