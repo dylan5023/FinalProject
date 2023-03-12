@@ -1,7 +1,8 @@
 // MOBILE VERSION
 @media (min-width: $mobile) {
   
-  body {
+  body,
+  header > section > aside {
     @include flexColumn;
   }
   
@@ -126,5 +127,51 @@
       color: whitesmoke;
     }
   }
+
+  // HEADER 
+  header {
+    display: flex;
+    border: 1px solid black;
+    height: 30vh;
+    background-image: url('/home_img/header_img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    > section {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(231, 228, 228, 0.5);
+      > aside {
+        row-gap: 1vh;
+        width: 90%;
+        color: $fontColor;
+      }
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 800;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    a {
+      display: flex;
+      @include center;
+      background-color: $mainColor;
+      color: $fontColor;
+      text-decoration: none;
+      border-radius: 5px;
+      width: 30%;
+      height: 5vh;
+      font-size: 17px;
+      &:hover {
+        background-color: $fontColor;
+        color: deepskyblue;
+      }
+    }
+  }
+  // HEADER END 
 
 }
