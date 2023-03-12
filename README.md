@@ -1,6 +1,6 @@
 # Final Project
 ------------------------------------------------
-## We are making a resposive Website related to Tutor.
+## We are making a responsive Website related to Tutor.
 
-### Contirbutor : Dylan, Natt and Pedro.
+### Contributor : Dylan, Natt and Pedro.
 
