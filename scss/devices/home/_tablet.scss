@@ -1,6 +1,14 @@
 // TABLET VERSION
 @media (min-width: $tablet) {
   body {
+    > nav {
+      h2 {
+        font-size: 35px;
+      }
+      i {
+        font-size: 45px;
+      }
+    }
     > aside {
       > ul {
         justify-content: space-between;
