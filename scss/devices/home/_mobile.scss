@@ -14,6 +14,8 @@
   }
   main {
     flex-wrap: wrap;
+    align-items: center;
+    row-gap: 15vh;
   }
 
   body {
@@ -175,7 +177,40 @@
     }
   }
   // HEADER END 
+  // ABOUT
+  .about img {
+      width: 25%;
+  }
 
+  .about {
+      @include flexColumn;
+      align-items: center;
+      width: 90%;
+      padding-top: 5vh;
+      > article {  
+          @include flexColumn;
+          align-items: center;
+          row-gap: 2vh;
+          text-align: center;
+          // padding-bottom: 10vh;       
+      }
+
+      h6 {
+          border: 2px solid $mainColor;
+          width: 50%;
+      }
+
+      span {
+          color: royalblue;
+      }
+
+      strong {
+          font-size: 23px;
+          color: navy;
+          padding-top: 5vh;
+          padding-bottom: 5vh;
+      }
+  }
 
 
 
