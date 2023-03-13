@@ -176,4 +176,228 @@
   }
   // HEADER END 
 
+
+
+
+  // CONTACT
+  .contact {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    @include center;
+    row-gap: 5vh;
+    background-color: $mainColor;
+
+    > article {
+      @include center;
+      row-gap: 1vh;
+    }
+    
+    h2 {
+      font-size: 40px;
+      font-weight: 800;
+      color: $fontColor;
+    }
+    
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: salmon;
+    }
+
+    h4 {
+      font-size: 18px; 
+    }
+
+    small {
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    > section {
+      @include flexColumn;
+      width: 95%;
+      row-gap: 5vh;
+    }
+       
+    ul {
+      @include flexColumn;
+      row-gap: 1vh;
+      padding: 2%;
+    }
+
+    li {
+      display: flex;
+      text-align: left;
+      align-items: center;
+      column-gap: 2vh;
+      row-gap: 1vh;
+      
+    }
+
+    aside {
+      @include flexColumn;
+      row-gap: 1vh;
+    }
+
+    a, time {
+      color: #113DAA;
+      font-style: normal;
+      font-size: 16px;
+    
+    }
+  }
+  
+  form {
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    row-gap: 2vh;
+    width: 100%;
+    text-align: center; 
+    align-items: center;  
+    background-color: #FDEBD0; 
+    
+    > article {
+      @include flexColumn;
+      row-gap: 1vh;
+      
+    }
+
+    > aside {
+      @include flexColumn;
+      align-items: center;
+      row-gap: 2vh;
+      width: 100%;
+    }
+
+    [type="submit"] {
+      background-color: #113DAA;
+      color: whitesmoke;
+      border: none;
+    }
+
+  }
+
+  input, textarea {
+    padding: 2vh;
+    width: 80%;
+  }
+  
+
+  /* FOOTER */
+  footer {
+    row-gap: 3vh;
+    padding-top: 5vh;
+
+    > article {
+      @include flexColumn;
+      padding: 3vh;
+      row-gap: 4vh;
+    }
+
+    p {
+      font-size: 18px;
+      color: dimgray;
+    }
+
+    figure {
+      display: flex;
+      align-items: center;
+      column-gap: 2vh;
+    }
+
+    img {
+      width: 25%;
+    }
+  
+    h2 {
+      font-size: 36px;
+      font-weight: 800;
+    }
+  
+    aside {
+      @include flexColumn;
+      row-gap: 3vh;
+
+      > ul {
+        @include flexColumn;
+        row-gap: 1vh;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        column-gap: 2vh;
+      }
+
+      a {
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+
+    }
+  
+    h3 {
+      font-size: 26px;
+      font-style: italic;
+      color: purple;
+    }
+  
+    section {
+      @include flexColumn;
+      row-gap: 1vh;
+    }
+
+  }
+
+  .icons {
+    > ul {
+      display: flex;
+      column-gap: 3vh;
+    }
+      
+    li {
+      border: 2px solid $fontColor;
+      border-radius: 50%;
+      padding: 2vh;
+    }
+    
+    a {
+      font-size: 26px;
+    }
+  
+  }
+
+  .bottombar {
+    @include flexColumn;
+    @include center;
+    text-align: center;
+    background-color: $mainColor;
+    padding: 3vh;
+  
+    p {
+      font-size: 18px;
+      color: $fontColor;
+    }
+  
+    a {
+      color: purple;
+    }
+  
+    > a {
+      display: none;
+    }
+  
+  
+    [class*="fa-"] {
+      font-size: 24px;
+    }
+  
+  }
 }
+
+
+
+
+
+
