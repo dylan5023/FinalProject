@@ -1,6 +1,8 @@
 // MOBILE VERSION
 @media (min-width: $mobile) {
   
+  .korea,
+  .korea > section,
   body,
   header > section > aside {
     @include flexColumn;
@@ -9,13 +11,11 @@
   body > nav > aside,
   body > aside,
   body > aside > ul,
-  body > aside li {
+  body > aside li,
+  .korea,
+  .korea > section {
     @include center;
   }
-  main {
-    flex-wrap: wrap;
-  }
-
   body {
     > aside {
       display: flex;
@@ -175,5 +175,140 @@
     }
   }
   // HEADER END 
-
+  img {
+    width: 20%;
+  }
+  .korea {
+    row-gap: 5vh;
+  }
+  
+  .intro {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    padding-top: 5%;
+    img {
+      width: 30%;
+      padding: 1%;
+      border-radius: 10px;
+      background-color: $fontColor;
+      border: 3px solid deepskyblue;
+    }
+    > figure {
+      display: flex;
+      @include center;
+      > figcaption {
+        @include flexColumn;
+        @include center;
+        row-gap: 2vh;
+        padding: 2%;
+        width: 90%;
+      }
+      h4 {
+        font-size: 20px;
+        color: $fontColor;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+        color: $fontColor;
+      }
+      span {
+        font-size: 18px;
+        color: royalblue;
+        font-weight: 700;
+      }
+      a {
+        display: flex;
+        @include center;
+        width: 50%;
+        height: 5vh;
+        border-radius: 10px;
+        color: $fontColor;
+        text-decoration: none;
+        background-color: $mainColor;
+        font-weight: 600;
+        &:hover {
+          color: deepskyblue;
+          background-color: $fontColor;
+        }
+      }
+    }
+  }
+  .assignment {
+    display: flex;
+    row-gap: 2vh;
+    width: 95%;
+    a {
+      display: flex;
+      @include center;
+      font-size: 17px;
+      width: 30%;
+      height: 4vh;
+      border-radius: 5px;
+      color: royalblue;
+      text-decoration: none;
+      background-color: $mainColor;
+      font-weight: 600;
+      &:hover {
+        color: deepskyblue;
+        background-color: $fontColor;
+      }
+    }
+    h6 {
+      line-height: 1.5;
+      font-size: 17px;
+    }
+    > section {
+      @include flexColumn;
+      @include center;
+      color: $fontColor;
+      width: 100%;
+      row-gap: 2vh;
+      > p {
+        width: 90%;
+        text-align: center;
+      }
+    }
+    > figure {
+      display: flex;
+      align-items: flex-end;
+      width: 95%;
+      padding: 2%;
+      column-gap: 1vh;
+      background-color: rgb(206, 206, 230);
+      > i {
+        font-size: 30px;
+        color: red;
+      }
+    }
+    > figure:nth-child(even) {
+      justify-content: left;
+      > figcaption {
+        @include flexColumn;
+        font-size: 20px;
+        border-radius: 15px 15px 15px 0;
+        color: $fontColor;
+        background-color: ghostwhite;
+        row-gap: 2vh;
+        padding: 3%;
+      }
+    }
+    >figure:nth-child(odd) {
+      justify-content: right;
+      flex-direction: row-reverse;
+      > i {
+        color: blue;
+      }
+      > figcaption {
+        @include flexColumn;
+        font-size: 20px;
+        border-radius: 15px 15px 0 15px;
+        color: $fontColor;
+        background-color: whitesmoke;
+        row-gap: 2vh;
+        padding: 3%;
+      }
+    }
+  }
 }
