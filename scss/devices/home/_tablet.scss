@@ -20,4 +20,23 @@
       }
     }
   }
+  // HEADER 
+  header {
+    > section {
+      > aside {
+        row-gap: 3vh;
+      }
+    }
+    h1 {
+      font-size: 45px;
+    }
+    h3 {
+      font-size: 35px;
+    }
+    a {
+      width: 25%;
+      font-size: 25px;
+    }
+  }
+  // HEADER END 
 }

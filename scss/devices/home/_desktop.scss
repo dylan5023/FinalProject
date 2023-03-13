@@ -57,4 +57,16 @@
     display: none;
   }
   // NAV END 
+  // HEADER 
+  header {
+    > section {
+      > aside {
+        row-gap: 4vh;
+      }
+    }
+    a {
+      width: 20%;
+    }
+  }
+  // HEADER END 
 }
