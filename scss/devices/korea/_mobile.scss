@@ -309,6 +309,10 @@
         row-gap: 2vh;
         padding: 3%;
       }
+      article {
+        @include flexColumn;
+        text-align: right;
+      }
     }
   }
 }
