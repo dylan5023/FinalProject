@@ -182,6 +182,10 @@
     
     a {
       font-size: 35px;
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
     }
   
   }
@@ -203,6 +207,10 @@
 
   [class*="fa-"] {
     font-size: 28px;
+    transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
   }
 
 
