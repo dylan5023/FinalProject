@@ -47,4 +47,223 @@
     }
   }
   // HEADER END 
+  // ABOUT
+  .about {
+      row-gap: 3vh;
+      > article {
+          > p {
+              font-size: 20px;
+          }
+      }
+
+      h2 {
+          font-size: 32px;
+      }
+
+      h4 {
+          font-size: 22px;
+      }
+
+      h6 {
+          width: 50%;
+      }
+
+      a {
+          transition: .6s;
+          &:hover {
+              background-color: $strongColor;
+              color: navy;
+          }
+      }
+  }
+
+  .subject {
+      > article {
+          flex-direction: row;
+          column-gap: 4vh;
+      }
+
+      // figure:first-child {
+      //     background-color: red;
+      // }
+
+      // figure:nth-child(2) {
+      //     background-color: yellow;
+      // }
+
+      // figure:last-child {
+      //     background-color: blue;
+      // }
+
+
+      a {
+          width: 50%;
+      }
+  }
+
+
+
+  // CONTACT
+  .contact {
+    width: 95%;
+    
+    h2 {
+      font-size: 44px;
+    }
+    
+    h3 {
+      font-size: 24px;
+
+    }
+
+    h4 {
+      font-size: 22px; 
+    }
+
+    small {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    > section {
+      flex-direction: row;
+      width: 95%;  
+      column-gap: 3vh;
+    }
+        
+    ul {
+      row-gap: 4vh;
+    }
+
+    li {
+      column-gap: 3vh;
+    }
+
+    a, time {
+      font-size: 20px;
+    }
+
+    i {
+      font-size: 30px;
+    }
+  }
+  
+  form {
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+    
+    > article {
+      row-gap: 2vh;
+    }
+
+    [type="submit"] {
+      width: 50%;
+      padding: 3%;
+      font-size: 20px;
+    }
+
+  }
+
+  input, textarea {
+    width: 70%;
+    font-size: 20px;
+  }
+
+  textarea {
+    min-height: 15vh;
+  }
+  
+
+  /* FOOTER */
+  footer {
+    row-gap: 2vh;
+
+    > article {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 2vh;
+      column-gap: 1vh;
+    }
+
+    p {
+      font-size: 28px;
+      font-weight: 600;
+      
+    }
+
+    > figure {
+      column-gap: 3vh;
+      row-gap: 1vh;
+    }
+  
+    h2 {
+      font-size: 60px;
+      font-weight: 900;
+    }
+  
+    aside {
+      > ul {
+        row-gap: 2vh;
+      }
+
+      li {
+        column-gap: 3vh;
+      }
+
+      a {
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+    }
+  
+    h3 {
+      font-size: 30px;
+    }
+  
+    section {
+      row-gap: 2vh;
+    }
+
+  }
+
+  .icons {
+    > ul {
+      column-gap: 2vh;
+    }
+    
+    a {
+      font-size: 35px;
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
+    }
+  
+  }
+
+  .bottombar {
+    align-items: flex-start;
+    padding-top: 4vh;
+
+    > article {
+      text-align: left;
+    }
+  
+    p {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  
+  }
+
+  [class*="fa-"] {
+    font-size: 28px;
+    transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
+  }
+
+
 }

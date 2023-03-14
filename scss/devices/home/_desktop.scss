@@ -69,4 +69,162 @@
     }
   }
   // HEADER END 
+
+
+
+  // CONTACT
+  .contact {
+
+    h2 {
+      font-size: 50px;
+    }
+    
+    h3 {
+      font-size: 30px;
+
+    }
+
+    small {
+      font-size: 22px;
+    }
+
+    > section {
+      column-gap: 4vh;
+    }
+        
+    ul {
+      row-gap: 5vh;
+    }
+
+    i {
+      font-size: 32px;
+    }
+  }
+  
+  form {
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    
+    > article {
+      row-gap: 2vh;
+    }
+
+    [type="submit"] {
+      width: 50%;
+      padding: 3%;
+      font-size: 20px;
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+          background-color: transparent;
+          border: 1px solid deepskyblue;
+        }
+    }
+
+  }
+
+  input, textarea {
+    width: 70%;
+    font-size: 20px;
+  }
+
+  textarea {
+    min-height: 15vh;
+  }
+  
+
+  /* FOOTER */
+  footer {
+    row-gap: 2vh;
+
+    > article {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 2vh;
+      column-gap: 1vh;
+    }
+
+    p {
+      font-size: 28px;
+      font-weight: 600;
+      
+    }
+
+    > figure {
+      column-gap: 3vh;
+      row-gap: 1vh;
+    }
+  
+    h2 {
+      font-size: 60px;
+      font-weight: 900;
+    }
+  
+    aside {
+      > ul {
+        row-gap: 2vh;
+      }
+
+      li {
+        column-gap: 3vh;
+      }
+
+      a {
+        font-size: 24px;
+        font-weight: 500;
+        transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
+      }
+
+    }
+  
+    h3 {
+      font-size: 30px;
+    }
+  
+    section {
+      row-gap: 2vh;
+    }
+
+  }
+
+  .icons {
+    > ul {
+      column-gap: 2vh;
+    }
+    
+    a {
+      font-size: 35px;
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
+    }
+  
+  }
+
+  .bottombar {
+    align-items: flex-start;
+    padding-top: 4vh;
+
+    > article {
+      text-align: left;
+    }
+  
+    p {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  
+  }
+
+  [class*="fa-"] {
+    font-size: 28px;
+    transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
+  }
 }

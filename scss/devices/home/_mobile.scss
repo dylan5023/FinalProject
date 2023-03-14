@@ -340,7 +340,7 @@
     h3 {
       font-size: 20px;
       font-weight: 600;
-      color: salmon;
+      color: whitesmoke;
     }
 
     h4 {
@@ -349,18 +349,19 @@
 
     small {
       font-size: 16px;
-      font-weight: 300;
+      font-weight: 400;
+      color: dimgray;
     }
 
     > section {
       @include flexColumn;
-      width: 95%;
+      width: 85%;
       row-gap: 5vh;
     }
        
     ul {
       @include flexColumn;
-      row-gap: 1vh;
+      row-gap: 3vh;
       padding: 2%;
     }
 
@@ -375,7 +376,6 @@
 
     aside {
       @include flexColumn;
-      row-gap: 1vh;
     }
 
     a, time {
@@ -383,6 +383,18 @@
       font-style: normal;
       font-size: 16px;
     
+    }
+
+    a {
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
+    }
+
+    i {
+      font-size: 22px;
+      color: $fontColor;
     }
   }
   
@@ -393,7 +405,7 @@
     width: 100%;
     text-align: center; 
     align-items: center;  
-    background-color: #FDEBD0; 
+    background-color: #192A88; 
     
     > article {
       @include flexColumn;
@@ -409,9 +421,14 @@
     }
 
     [type="submit"] {
-      background-color: #113DAA;
+      background-color: #766fd7 ;
       color: whitesmoke;
       border: none;
+      font-size: 16px;
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
     }
 
   }
@@ -419,6 +436,7 @@
   input, textarea {
     padding: 2vh;
     width: 80%;
+    border: 1px solid dimgray;
   }
   
 
@@ -433,15 +451,18 @@
       row-gap: 4vh;
     }
 
-    p {
-      font-size: 18px;
-      color: dimgray;
-    }
-
-    figure {
+    
+    > figure {
       display: flex;
       align-items: center;
       column-gap: 2vh;
+      padding: 3vh;
+      row-gap: 4vh;
+      
+      p {
+        font-size: 18px;
+        color: #192A88;
+      }
     }
 
     img {
@@ -469,7 +490,7 @@
       }
 
       a {
-        font-size: 20px;
+        font-size: 18px;
         text-transform: uppercase;
       }
 
@@ -478,12 +499,12 @@
     h3 {
       font-size: 26px;
       font-style: italic;
-      color: purple;
+      color: $fontColor;
     }
   
     section {
       @include flexColumn;
-      row-gap: 1vh;
+      row-gap: 2vh;
     }
 
   }
@@ -502,6 +523,7 @@
     
     a {
       font-size: 26px;
+      color: #192A88 ;
     }
   
   }
@@ -515,11 +537,10 @@
   
     p {
       font-size: 18px;
-      color: $fontColor;
     }
   
     a {
-      color: purple;
+      color: #192A88;
     }
   
     > a {
