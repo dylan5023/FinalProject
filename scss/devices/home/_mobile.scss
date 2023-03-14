@@ -340,7 +340,7 @@
     h3 {
       font-size: 20px;
       font-weight: 600;
-      color: $fontColor;
+      color: whitesmoke;
     }
 
     h4 {
@@ -350,6 +350,7 @@
     small {
       font-size: 16px;
       font-weight: 400;
+      color: dimgray;
     }
 
     > section {
@@ -384,6 +385,13 @@
     
     }
 
+    a {
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
+    }
+
     i {
       font-size: 22px;
       color: $fontColor;
@@ -397,7 +405,7 @@
     width: 100%;
     text-align: center; 
     align-items: center;  
-    background-color: ghostwhite; 
+    background-color: #192A88; 
     
     > article {
       @include flexColumn;
@@ -413,10 +421,14 @@
     }
 
     [type="submit"] {
-      background-color: #113DAA;
+      background-color: #766fd7 ;
       color: whitesmoke;
       border: none;
       font-size: 16px;
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
     }
 
   }
@@ -439,17 +451,18 @@
       row-gap: 4vh;
     }
 
-    p {
-      font-size: 18px;
-      color: dimgray;
-    }
-
+    
     > figure {
       display: flex;
       align-items: center;
       column-gap: 2vh;
       padding: 3vh;
       row-gap: 4vh;
+      
+      p {
+        font-size: 18px;
+        color: #192A88;
+      }
     }
 
     img {
@@ -510,7 +523,7 @@
     
     a {
       font-size: 26px;
-      color: purple
+      color: #192A88 ;
     }
   
   }
@@ -524,11 +537,10 @@
   
     p {
       font-size: 18px;
-      color: $fontColor;
     }
   
     a {
-      color: purple;
+      color: #192A88;
     }
   
     > a {
