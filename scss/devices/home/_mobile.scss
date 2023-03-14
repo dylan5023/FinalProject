@@ -254,7 +254,6 @@
   }
 
   .method {
-      row-gap: 5vh;
       aside {
           @include flexColumn;
           @include center;

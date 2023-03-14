@@ -101,6 +101,25 @@
       }
   }
 
+  .method {
+      > article {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          column-gap: 3vh;
+      }
+
+      aside {
+          width: 30%;
+          height: 25vh;
+      }
+
+      p {
+          font-size: 15px;
+      }
+
+  }
+
 
 
   // CONTACT
