@@ -14,7 +14,7 @@
   }
   main {
     align-items: center;
-    row-gap: 15vh;
+    row-gap: 12vh;
   }
 
   body {
@@ -179,7 +179,7 @@
   // ABOUT
   .about,
   .team,
-  .languages,
+  .subject,
   .method {
       @include flexColumn;
   }
@@ -187,8 +187,8 @@
   .about {
       align-items: center;
       width: 90%;
-      row-gap: 3vh;
-      padding-top: 5vh;
+      row-gap: 4vh;
+      padding-top: 7vh;
       > article {  
           @include flexColumn;
           align-items: center;
@@ -217,6 +217,10 @@
           text-align: center;
           font-weight: 800;
       }
+
+      h4 {
+          font-size: 17px;
+      }
   }
 
   .subject {
@@ -238,33 +242,54 @@
       a {
         color: $strongColor;
         background-color: navy;
+        font-weight: 600;
         width: 35%;
         text-align: center;
         padding: 1vh;
       }
 
       p {
-        font-weight: 600;
+        font-weight: 500;
       }
   }
 
-  
+  .method {
+      row-gap: 5vh;
+      aside {
+          @include flexColumn;
+          @include center;
+          row-gap: 2vh;
+          text-align: center;
+          background-color: $mainColor;
+          height: 40vh;
+          padding: 4vh;
+      }
+
+      h4 {
+          padding-bottom: 3vh;
+      }
+
+      i {
+          font-size: 50px;
+      }
+  }
 
   .team {
-      row-gap: 2vh;
       > article {
           @include flexColumn;
           row-gap: 5vh;
-          > h3 {
-              color: navy;
-              font-size: 20px;
-          }
+      }
+        
+      > h3 {
+          color: navy;
+          font-weight: 700;
+          font-size: 22px;
       }
 
       figure {
           @include flexColumn;
           width: 100%;
-        }
+      }
 
       img {
           width: 100%;
@@ -273,7 +298,16 @@
 
       figcaption {
           @include flexColumn;
-          background-color: $mainColor;
+          background-color: $strongColor;
+          padding: 3vh;
+          > h4 {
+              font-weight: 800;
+              font-size: 20px;
+          }
+      }
+
+      aside {
+          display: none;
       }
 
       ul {
