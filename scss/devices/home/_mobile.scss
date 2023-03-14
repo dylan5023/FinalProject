@@ -245,7 +245,7 @@
 
     small {
       font-size: 16px;
-      font-weight: 300;
+      font-weight: 400;
     }
 
     > section {
@@ -256,7 +256,7 @@
        
     ul {
       @include flexColumn;
-      row-gap: 1vh;
+      row-gap: 3vh;
       padding: 2%;
     }
 
@@ -271,7 +271,6 @@
 
     aside {
       @include flexColumn;
-      row-gap: 1vh;
     }
 
     a, time {
@@ -279,6 +278,11 @@
       font-style: normal;
       font-size: 16px;
     
+    }
+
+    i {
+      font-size: 22px;
+      color: $fontColor;
     }
   }
   
@@ -308,6 +312,7 @@
       background-color: #113DAA;
       color: whitesmoke;
       border: none;
+      font-size: 16px;
     }
 
   }
@@ -335,10 +340,12 @@
       color: dimgray;
     }
 
-    figure {
+    > figure {
       display: flex;
       align-items: center;
       column-gap: 2vh;
+      padding: 3vh;
+      row-gap: 4vh;
     }
 
     img {
@@ -366,7 +373,7 @@
       }
 
       a {
-        font-size: 20px;
+        font-size: 18px;
         text-transform: uppercase;
       }
 
@@ -375,12 +382,12 @@
     h3 {
       font-size: 26px;
       font-style: italic;
-      color: purple;
+      color: $fontColor;
     }
   
     section {
       @include flexColumn;
-      row-gap: 1vh;
+      row-gap: 2vh;
     }
 
   }
@@ -399,6 +406,7 @@
     
     a {
       font-size: 26px;
+      color: purple
     }
   
   }
