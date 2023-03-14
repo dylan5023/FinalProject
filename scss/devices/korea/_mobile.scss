@@ -184,11 +184,10 @@
   
   .intro {
     display: flex;
-    flex-wrap: wrap;
     width: 95%;
     padding-top: 5%;
     img {
-      width: 30%;
+      width: 35%;
       padding: 1%;
       border-radius: 10px;
       background-color: $fontColor;
@@ -196,6 +195,8 @@
     }
     > figure {
       display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
       @include center;
       > figcaption {
         @include flexColumn;
@@ -255,6 +256,9 @@
         background-color: $fontColor;
       }
     }
+    h2 {
+      font-size: 30px;
+    }
     h6 {
       line-height: 1.5;
       font-size: 17px;
@@ -266,7 +270,7 @@
       width: 100%;
       row-gap: 2vh;
       > p {
-        width: 90%;
+        width: 80%;
         text-align: center;
       }
     }
@@ -314,5 +318,75 @@
         text-align: right;
       }
     }
+  }
+  .package {
+    display: flex;
+    row-gap: 4vh;
+    width: 95%;
+    > section {
+      width: 100%;
+      @include flexColumn;
+      @include center;
+      row-gap: 2vh;
+      > p {
+        width: 90%;
+        text-align: center;
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+    }
+    > blockquote {
+      @include flexColumn;
+      @include center;
+      flex-wrap: wrap;
+      row-gap: 3vh;
+      width: 95%;
+    }
+    aside {
+      @include flexColumn;
+      @include center;
+      text-align: center;
+      row-gap: 3vh;
+      height: 40vh;
+      width: 100%;
+      background-color: $mainColor;
+      &:hover {
+        background-color: $fontColor;
+        color: deepskyblue;
+      }
+      > article {
+        font-size: 20px;
+      }
+    }
+    h3 {
+      font-size: 25px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    section {
+      display: flex;
+      @include center;
+      width: 100%;
+      > a {
+        display: flex;
+        @include center;
+        font-size: 20px;
+        width: 25%;
+        height: 4vh;
+        border-radius: 5px;
+        color: royalblue;
+        text-decoration: none;
+        background-color: $mainColor;
+        font-weight: 600;
+        &:hover {
+          color: deepskyblue;
+          background-color: $fontColor;
+        }
+      }
+    }
+
   }
 }
