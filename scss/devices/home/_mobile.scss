@@ -14,7 +14,7 @@
   }
   main {
     align-items: center;
-    row-gap: 15vh;
+    row-gap: 12vh;
   }
 
   body {
@@ -177,26 +177,28 @@
   }
   // HEADER END 
   // ABOUT
-  .about img {
-      width: 25%;
+  .about,
+  .team,
+  .subject,
+  .method {
+      @include flexColumn;
   }
 
   .about {
-      @include flexColumn;
       align-items: center;
       width: 90%;
-      padding-top: 5vh;
+      row-gap: 4vh;
+      padding-top: 7vh;
       > article {  
           @include flexColumn;
           align-items: center;
-          row-gap: 2vh;
+          row-gap: 3vh;
           text-align: center;
-          // padding-bottom: 10vh;       
-      }
-
+        }
+        
       h6 {
-          border: 2px solid $mainColor;
-          width: 50%;
+          border: 1px solid $fontColor;
+          width: 60%;
       }
 
       span {
@@ -204,13 +206,115 @@
       }
 
       strong {
-          font-size: 23px;
+          font-size: 22px;
           color: navy;
-          padding-top: 5vh;
-          padding-bottom: 5vh;
+          text-align: center;
+          padding-top: 3vh;
+      }
+
+      h2 {
+          font-size: 25px;
+          text-align: center;
+          font-weight: 800;
+      }
+
+      h4 {
+          font-size: 17px;
       }
   }
 
+  .subject {
+      figure {
+          width: 100%;
+          @include flexColumn;
+      }
+
+      img {
+          width: 100%;
+      }
+
+      figcaption {
+          @include flexColumn;
+          align-items: center;
+          row-gap: 3vh;
+      }
+
+      a {
+        color: $strongColor;
+        background-color: navy;
+        font-weight: 600;
+        width: 35%;
+        text-align: center;
+        padding: 1vh;
+      }
+
+      p {
+        font-weight: 500;
+      }
+  }
+
+  .method {
+      row-gap: 5vh;
+      aside {
+          @include flexColumn;
+          @include center;
+          row-gap: 2vh;
+          text-align: center;
+          background-color: $mainColor;
+          height: 40vh;
+          padding: 4vh;
+      }
+
+      h4 {
+          padding-bottom: 3vh;
+      }
+
+      i {
+          font-size: 50px;
+      }
+  }
+
+  .team {
+      > article {
+          @include flexColumn;
+          row-gap: 5vh;
+      }
+        
+      > h3 {
+          color: navy;
+          font-weight: 700;
+          font-size: 22px;
+      }
+
+      figure {
+          @include flexColumn;
+          width: 100%;
+      }
+
+      img {
+          width: 100%;
+          height: 40vh;
+      }
+
+      figcaption {
+          @include flexColumn;
+          background-color: $strongColor;
+          padding: 3vh;
+          > h4 {
+              font-weight: 800;
+              font-size: 20px;
+          }
+      }
+
+      aside {
+          display: none;
+      }
+
+      ul {
+          display: flex;
+          justify-content: center;
+      }
+  }
 
 
   // CONTACT
