@@ -223,6 +223,7 @@
       }
   }
 
+  // ABOUT SUBJECT
   .subject {
       figure {
           width: 100%;
@@ -253,6 +254,7 @@
       }
   }
 
+  // ABOUT METHOD
   .method {
       aside {
           @include flexColumn;
@@ -273,6 +275,7 @@
       }
   }
 
+  // ABOUT TEAM
   .team {
       > article {
           @include flexColumn;
@@ -283,6 +286,10 @@
           color: navy;
           font-weight: 700;
           font-size: 22px;
+      }
+
+      h4 {
+          color: black;
       }
 
       figure {
@@ -312,6 +319,22 @@
       ul {
           display: flex;
           justify-content: center;
+      }
+
+      small {
+          font-weight: 600;
+      }
+
+      .korea {
+          color: red;
+      }
+
+      .brazil {
+          color: green;
+      }
+
+      .thailand {
+          color: blue;
       }
   }
 

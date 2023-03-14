@@ -75,8 +75,13 @@
               color: navy;
           }
       }
+
+      strong {
+          font-size: 28px;
+      }
   }
 
+  // ABOUT SUBJECT
   .subject {
       > article {
           flex-direction: row;
@@ -101,6 +106,7 @@
       }
   }
 
+  // ABOUT METHOD
   .method {
       > article {
           flex-direction: row;
@@ -117,9 +123,19 @@
       p {
           font-size: 15px;
       }
-
   }
 
+  // ABOUT TEAM
+  .team {
+      > article {
+          flex-direction: row;
+          column-gap: 1vh;
+      }
+
+      img {
+          height: 18vh;
+      }
+  }
 
 
   // CONTACT
