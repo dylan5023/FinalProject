@@ -91,10 +91,6 @@
       a {
           width: 50%;
       }
-
-      img {
-          height: 50vh;
-      }
   }
 
   // ABOUT METHOD
@@ -126,6 +122,15 @@
       img {
           height: 18vh;
       }
+
+      figcaption {
+          padding: 1vh;
+          > h4 {
+            font-size: 16px;
+          }
+      }
+
+
   }
 
 
