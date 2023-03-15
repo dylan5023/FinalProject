@@ -223,6 +223,7 @@
       }
   }
 
+  // ABOUT SUBJECT
   .subject {
       figure {
           width: 100%;
@@ -253,8 +254,8 @@
       }
   }
 
+  // ABOUT METHOD
   .method {
-      row-gap: 5vh;
       aside {
           @include flexColumn;
           @include center;
@@ -274,6 +275,7 @@
       }
   }
 
+  // ABOUT TEAM
   .team {
       > article {
           @include flexColumn;
@@ -284,6 +286,10 @@
           color: navy;
           font-weight: 700;
           font-size: 22px;
+      }
+
+      h4 {
+          color: black;
       }
 
       figure {
@@ -313,6 +319,22 @@
       ul {
           display: flex;
           justify-content: center;
+      }
+
+      small {
+          font-weight: 600;
+      }
+
+      .korea {
+          color: red;
+      }
+
+      .brazil {
+          color: green;
+      }
+
+      .thailand {
+          color: blue;
       }
   }
 
@@ -452,11 +474,10 @@
     }
 
     
-    > figure {
+    figure {
       display: flex;
       align-items: center;
-      column-gap: 2vh;
-      padding: 3vh;
+      column-gap: 3vh;
       row-gap: 4vh;
       
       p {
@@ -516,13 +537,14 @@
     }
       
     li {
-      border: 2px solid $fontColor;
-      border-radius: 50%;
-      padding: 2vh;
+      display: flex;
     }
     
     a {
-      font-size: 26px;
+      border: 2px solid $fontColor;
+      border-radius: 60%;
+      padding: 2vh;
+      font-size: 28px;
       color: #192A88 ;
     }
   
@@ -541,6 +563,7 @@
   
     a {
       color: #192A88;
+      font-weight: 500;
     }
   
     > a {

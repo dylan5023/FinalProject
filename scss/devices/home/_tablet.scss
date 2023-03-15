@@ -47,8 +47,86 @@
     }
   }
   // HEADER END 
+  // ABOUT
+  .about {
+      row-gap: 3vh;
+      > article {
+          > p {
+              font-size: 20px;
+          }
+      }
 
+      h2 {
+          font-size: 32px;
+      }
 
+      h4 {
+          font-size: 22px;
+      }
+
+      h6 {
+          width: 50%;
+      }
+
+      a {
+          transition: .6s;
+          &:hover {
+              background-color: $strongColor;
+              color: navy;
+          }
+      }
+
+      strong {
+          font-size: 29px;
+      }
+  }
+
+  // ABOUT SUBJECT
+  .subject {
+      > article {
+          flex-direction: row;
+          column-gap: 4vh;
+      }
+
+      a {
+          width: 50%;
+      }
+
+      img {
+          height: 50vh;
+      }
+  }
+
+  // ABOUT METHOD
+  .method {
+      > article {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          column-gap: 3vh;
+      }
+
+      aside {
+          width: 30%;
+          height: 25vh;
+      }
+
+      p {
+          font-size: 15px;
+      }
+  }
+
+  // ABOUT TEAM
+  .team {
+      > article {
+          flex-direction: row;
+          column-gap: 1vh;
+      }
+
+      img {
+          height: 18vh;
+      }
+  }
 
 
   // CONTACT
@@ -133,21 +211,35 @@
       column-gap: 1vh;
     }
 
-    p {
-      font-size: 28px;
-      font-weight: 600;
+    // p {
+    //   font-size: 28px;
+    //   font-weight: 600;
       
-    }
+    // }
 
-    > figure {
+    figure {
+      flex-direction: column;
+      align-items: flex-start;
       column-gap: 3vh;
       row-gap: 1vh;
+      width: 30%;
+    }
+
+    img {
+      width: 40%;
+    }
+
+    figcaption {
+      > h2 {
+        font-size: 55px;
+        font-weight: 900;
+      }
+
+      > p {
+        font-size: 26px;
+      }
     }
   
-    h2 {
-      font-size: 60px;
-      font-weight: 900;
-    }
   
     aside {
       > ul {
@@ -177,11 +269,21 @@
 
   .icons {
     > ul {
-      column-gap: 2vh;
+      flex-direction: column;
+      row-gap: 2vh;
+    }
+
+    li {
+      display: flex;
+      justify-content: center;
     }
     
     a {
       font-size: 35px;
+      background-color: whitesmoke;
+      border: 2px solid dimgray;
+      border-radius: 50%;
+      padding: 2vh;
       transition: .5s;
         &:hover {
           color: deepskyblue;
