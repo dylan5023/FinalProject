@@ -73,142 +73,142 @@
 
 
   // CONTACT
-  // .contact {
-
-  //   h2 {
-  //     font-size: 50px;
-  //   }
+  .contact {
     
-  //   h3 {
-  //     font-size: 30px;
+    h3 {
+      font-size: 26px;
 
-  //   }
+    }
 
-  //   small {
-  //     font-size: 22px;
-  //   }
+    small {
+      font-size: 22px;
+      font-weight: 600;
+    }
 
-  //   > section {
-  //     column-gap: 4vh;
-  //   }
+    > section {
+      column-gap: 4vh;
+    }
         
-  //   ul {
-  //     row-gap: 5vh;
-  //   }
+    ul {
+      row-gap: 5vh;
+    }
 
-  //   i {
-  //     font-size: 32px;
-  //   }
-  // }
+    i {
+      font-size: 32px;
+    }
+
+    form > aside {
+      flex-direction: row;
+      column-gap:3vh;
+      width: 72.5%;
+    }
+  }
   
-  // form {
-  //   padding-bottom: 5vh;
-  //   padding-top: 5vh;
-    
-  //   > article {
-  //     row-gap: 2vh;
-  //   }
+  form {
+    width: 50%;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
 
-  //   > aside {
-  //     flex-direction: row;
-      
-  //   }
+    [type="submit"] {
+      padding: 1%;
+      border-radius: 5vh;
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+          background-color: transparent;
+          border: 1px solid deepskyblue;
+        }
+    }
 
-  //   [type="submit"] {
-  //     border-radius: 5vh;
-  //     font-size: 24px;
-  //     transition: .5s;
-  //       &:hover {
-  //         color: deepskyblue;
-  //         background-color: transparent;
-  //         border: 1px solid deepskyblue;
-  //       }
-  //   }
+  }
 
-  // }
+  input, textarea {
+    font-size: 14px;
+    padding: 1vh;
+  }
 
-  // input, textarea {
-  //   width: 70%;
-  //   font-size: 20px;
-  // }
-
-  // textarea {
-  //   min-height: 15vh;
-  // }
+  textarea {
+    min-height: 20vh;
+  }
   
 
   /* FOOTER */
   footer {
-    row-gap: 1vh;
+    row-gap: 2vh;
 
     > article {
-      flex-direction: row;
       padding: 1vh;
-      column-gap: 1vh;
+      justify-content: space-evenly;
 
     }
 
-    img {
-      width: 10%;
-    }
-
-    p {
-      font-size: 28px;
-      font-weight: 600;
-      
-    }
-
+    
     figure {
-      column-gap: 3vh;
-      row-gap: 1vh;
+      row-gap: 2vh;
+      width: 25%;
     }
-  
-    h2 {
-      font-size: 60px;
-      font-weight: 900;
+    
+    img {
+      width: 30%;
+    }
+
+    figcaption {
+      > h2 {
+        font-size: 40px;
+      }
+      
+      > p {
+        font-size: 24px ;
+      }
+
+
     }
   
     aside {
       > ul {
-        row-gap: 2vh;
+        row-gap: 3vh;
       }
 
       li {
-        column-gap: 3vh;
+        column-gap: 2vh;
       }
 
       a {
-        font-size: 24px;
-        font-weight: 500;
+        font-size: 18px;
+        font-weight: 600;
         transition: .5s;
-        &:hover {
-          color: deepskyblue;
-        }
+      }
+      
+      a:hover {
+        color: deepskyblue;
+        background-color: black;
       }
 
     }
-  
-    h3 {
-      font-size: 30px;
+
+    h4 {
+      font-size: 16px;
     }
   
-    section {
-      row-gap: 2vh;
+    h3 {
+      font-weight: 800;
     }
 
   }
 
   .icons {
     > ul {
+      flex-direction: row;
       column-gap: 2vh;
     }
     
     a {
-      font-size: 35px;
+      font-size: 26px;
       transition: .5s;
-        &:hover {
-          color: deepskyblue;
-        }
+      &:hover {
+        color: deepskyblue;
+        background-color: transparent ;
+      }
     }
   
   }
@@ -216,13 +216,25 @@
   .bottombar {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 4vh;
 
     > article {
+      display: flex;
+      column-gap: 4vh;
       
       p {
-        font-size: 26px;
+        font-size: 20px;
+        > a {
+          transition: .5s;
+          
+        }
       }
+
+      a:hover {
+        color: deepskyblue;
+      }
+
       
     }
   
@@ -231,14 +243,15 @@
       justify-content: center;
     }
 
-    [class*="fa-"] {
+    
+    > [class*="fa-"] {
       font-size: 60px;
-      transition: .4s;
-          &:hover {
-            color: deepskyblue;
-          }
+      transition: .5s;
+      &:hover {
+        color: deepskyblue;
+      }
     }
-  
   }
+  
   
 }
