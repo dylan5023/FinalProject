@@ -452,11 +452,10 @@
     }
 
     
-    > figure {
+    figure {
       display: flex;
       align-items: center;
-      column-gap: 2vh;
-      padding: 3vh;
+      column-gap: 3vh;
       row-gap: 4vh;
       
       p {
@@ -541,6 +540,7 @@
   
     a {
       color: #192A88;
+      font-weight: 500;
     }
   
     > a {
