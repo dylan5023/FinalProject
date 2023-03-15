@@ -188,18 +188,15 @@
 
   // CONTACT
   .contact {
-
-    h2 {
-      font-size: 50px;
-    }
     
     h3 {
-      font-size: 30px;
+      font-size: 26px;
 
     }
 
     small {
       font-size: 22px;
+      font-weight: 600;
     }
 
     > section {
@@ -213,20 +210,22 @@
     i {
       font-size: 32px;
     }
+
+    form > aside {
+      flex-direction: row;
+      column-gap:3vh;
+      width: 72.5%;
+    }
   }
   
   form {
+    width: 50%;
     padding-bottom: 5vh;
     padding-top: 5vh;
-    
-    > article {
-      row-gap: 2vh;
-    }
 
     [type="submit"] {
-      width: 50%;
-      padding: 3%;
-      font-size: 20px;
+      padding: 1%;
+      border-radius: 5vh;
       transition: .5s;
         &:hover {
           color: deepskyblue;
@@ -238,12 +237,12 @@
   }
 
   input, textarea {
-    width: 70%;
-    font-size: 20px;
+    font-size: 14px;
+    padding: 1vh;
   }
 
   textarea {
-    min-height: 15vh;
+    min-height: 20vh;
   }
   
 
@@ -252,93 +251,121 @@
     row-gap: 2vh;
 
     > article {
-      flex-direction: row;
-      justify-content: space-around;
-      padding: 2vh;
-      column-gap: 1vh;
+      padding: 1vh;
+      justify-content: space-evenly;
+
     }
 
-    p {
-      font-size: 28px;
-      font-weight: 600;
+    
+    figure {
+      row-gap: 2vh;
+      width: 25%;
+    }
+    
+    img {
+      width: 30%;
+    }
+
+    figcaption {
+      > h2 {
+        font-size: 40px;
+      }
       
-    }
+      > p {
+        font-size: 24px ;
+      }
 
-    > figure {
-      column-gap: 3vh;
-      row-gap: 1vh;
-    }
-  
-    h2 {
-      font-size: 60px;
-      font-weight: 900;
+
     }
   
     aside {
       > ul {
-        row-gap: 2vh;
+        row-gap: 3vh;
       }
 
       li {
-        column-gap: 3vh;
+        column-gap: 2vh;
       }
 
       a {
-        font-size: 24px;
-        font-weight: 500;
+        font-size: 18px;
+        font-weight: 600;
         transition: .5s;
-        &:hover {
-          color: deepskyblue;
-        }
+      }
+      
+      a:hover {
+        color: deepskyblue;
+        background-color: black;
       }
 
     }
-  
-    h3 {
-      font-size: 30px;
+
+    h4 {
+      font-size: 16px;
     }
   
-    section {
-      row-gap: 2vh;
+    h3 {
+      font-weight: 800;
     }
 
   }
 
   .icons {
     > ul {
+      flex-direction: row;
       column-gap: 2vh;
     }
     
     a {
-      font-size: 35px;
+      font-size: 26px;
       transition: .5s;
-        &:hover {
-          color: deepskyblue;
-        }
+      &:hover {
+        color: deepskyblue;
+        background-color: transparent ;
+      }
     }
   
   }
 
   .bottombar {
-    align-items: flex-start;
-    padding-top: 4vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vh;
 
     > article {
-      text-align: left;
-    }
-  
-    p {
-      font-size: 24px;
-      font-weight: 500;
-    }
-  
-  }
-
-  [class*="fa-"] {
-    font-size: 28px;
-    transition: .5s;
-        &:hover {
-          color: deepskyblue;
+      display: flex;
+      column-gap: 4vh;
+      
+      p {
+        font-size: 20px;
+        > a {
+          transition: .5s;
+          
         }
+      }
+
+      a:hover {
+        color: deepskyblue;
+      }
+
+      
+    }
+  
+    > a {
+      display: flex;
+      justify-content: center;
+    }
+
+    
+    > [class*="fa-"] {
+      font-size: 60px;
+      transition: .5s;
+      &:hover {
+        color: deepskyblue;
+      }
+    }
   }
+  
+  
 }
