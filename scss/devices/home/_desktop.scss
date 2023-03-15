@@ -69,7 +69,34 @@
     }
   }
   // HEADER END 
+  // ABOUT
+  .about {
+      width: 95%;
+      > article {
+          p {
+              font-size: 18px;
+              width: 85%;
+          }
+      }
 
+      h2 {
+          font-size: 30px;
+      }
+
+      h4 {
+          font-size: 20px;
+      }
+
+      h6 {
+          width: 30%;
+      }
+  }
+
+  .subject {
+      a {
+        width: 30%;
+      }
+  }
 
 
   // CONTACT
