@@ -21,6 +21,28 @@
   .korea {
     row-gap: 5vh;
   }
+  .korean {
+    > section {
+      justify-content: center;
+      > aside {
+        display: flex;
+        flex-direction: row;
+        column-gap: 5vh;
+        @include center;
+      }
+    }
+    strong {
+      color: whitesmoke;
+      font-weight: 600;
+      font-size: 35px;
+      border-bottom: 3px solid whitesmoke;
+    }
+    span {
+      font-size: 18px;
+      color: $mainColor;
+      font-weight: 600;
+    }
+  }
   
   .intro {
     display: flex;

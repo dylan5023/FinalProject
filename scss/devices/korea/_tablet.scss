@@ -1,5 +1,18 @@
 // TABLET VERSION
 @media (min-width: $tablet) {
+  .korean {
+    > section {
+      > aside {
+        column-gap: 6vh;
+      }
+    }
+    strong {
+      font-size: 60px;
+    }
+    span {
+      font-size: 40px;
+    }
+  }
   .intro {
     img {
       width: 40%;

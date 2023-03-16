@@ -1,5 +1,18 @@
 // DESKTOP VERSION
 @media (min-width: $desktop) {
+  .korean {
+    > section {
+      > aside {
+        column-gap: 15vh;
+      }
+    }
+    strong {
+      font-size: 70px;
+    }
+    span {
+      font-size: 40px;
+    }
+  }
   .korea {
     row-gap: 8vh;
   }
