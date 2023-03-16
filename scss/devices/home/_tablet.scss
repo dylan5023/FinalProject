@@ -1,52 +1,6 @@
 // TABLET VERSION
 @media (min-width: $tablet) {
-  body {
-    > nav {
-      h2 {
-        font-size: 35px;
-      }
-      i {
-        font-size: 45px;
-      }
-    }
-    > aside {
-      > ul {
-        justify-content: space-between;
-        column-gap: 0;
-      }
-      > ul:last-child {
-        width: 35%;
-      }
-      li {
-        width: 80%;
-      }
-      a {
-        font-size: 30px;
-      }
-      [class*="fa-"]{
-        font-size: 35px;
-      }
-    }
-  }
-  // HEADER 
-  header {
-    > section {
-      > aside {
-        row-gap: 3vh;
-      }
-    }
-    h1 {
-      font-size: 45px;
-    }
-    h3 {
-      font-size: 35px;
-    }
-    a {
-      width: 25%;
-      font-size: 25px;
-    }
-  }
-  // HEADER END 
+
   // ABOUT
   .about {
       row-gap: 3vh;
