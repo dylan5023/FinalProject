@@ -1,72 +1,109 @@
 // DESKTOP VERSION
 @media (min-width: $desktop) {
-  // NAV 
-  body {
-    > nav {
-      i {
-        font-size: 40px;
-      }
-      h2 {
-        font-size: 40px;
-      }
-      > aside {
-        column-gap: 2vh;
-      }
-    }
+  .korea {
+    row-gap: 8vh;
   }
-  body {
-    > aside {
-      li {
+  .intro {
+    > figure {
+      flex-direction: row;
+      > figcaption {
         width: 60%;
       }
-      > ul:last-child {
-        width: 30%;
-      }
     }
-  }
-  nav {
-    justify-content: space-between;
-    > ul {
-      display: flex;
-      @include center;
-      width: 70%;
+    img {
+      width: 30%;
       height: 100%;
-      > li {
-        display: flex;
-        @include center;
-        width: 100%;
-        height: 100%;
-      }
-      a {
-        display: flex;
-        @include center;
-        color: $fontColor;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 25px;
-        height: 100%;
-        border-bottom: 2px solid transparent;
-        &:hover {
-          color: deepskyblue;
-          border-bottom: 2px solid $fontColor;
-        }
-      }
     }
   }
-  details {
-    display: none;
-  }
-  // NAV END 
-  // HEADER 
-  header {
+  .assignment {
+    width: 100%;
+    background-image: url(/korea_img/bg_korean.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(110, 105, 105, .6);
+    background-attachment: fixed;
+    row-gap: 4vh;
     > section {
-      > aside {
-        row-gap: 4vh;
+      padding: 3% 0;
+      row-gap: 4vh;
+      height: 100%;
+      background-color: rgba(110, 105, 105, .7);
+      p {
+        color: ghostwhite;
+        font-size: 32px;
       }
+    }
+    > figure {
+      width: 100%;
+      background-color: rgba(110, 105, 105, .7);
+      > i {
+        padding: 0 2%;
+        font-size: 70px;
+      }
+      h4 {
+        font-size: 40px;
+      }
+      h6 {
+        font-size: 35px;
+      }
+      >figcaption {
+        box-shadow: 15px 15px 7px black;
+      }
+      &:hover {
+        background-color: rgba(35, 61, 104, 0.5);
+        color: $hoverColor;
+      }
+    }
+    h2 {
+      color: ghostwhite;
     }
     a {
-      width: 20%;
+      width: 40%;
+      font-size: 35px;
     }
   }
-  // HEADER END 
+  .package {
+    section {
+      > a{
+        font-size: 30px;
+        width: 40%;
+      }
+    }
+    width: 100%;
+    > section {
+      row-gap: 4vh;
+      h2 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 35px;
+      }
+    }
+    > blockquote {
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 3% 0;
+      background-color: $mainColor;
+      width: 100%;
+    }
+    aside {
+      border: 5px solid dimgray;
+      width: 30%;
+      row-gap: 4vh;
+      > article {
+        @include flexColumn;
+        row-gap: 3vh;
+      }
+    }
+    h3 {
+      font-size: 40px;
+    }
+    h5 {
+      font-size: 30px;
+    }
+    h6 {
+      font-size: 25px;
+    }
+  }
 }
