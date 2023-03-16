@@ -98,7 +98,7 @@
         }
     
         a {
-            color: $aColor;
+            color: white;
         }
     
         > a {
@@ -319,6 +319,7 @@
             
             p {
                 font-size: 20px;
+                font-weight: 600;
                 > a {
                     transition: .5s;   
                 }

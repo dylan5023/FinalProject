@@ -186,7 +186,7 @@
     h3 {
       font-size: 20px;
       font-weight: 600;
-      color: whitesmoke;
+      color: $mainColor;
     }
 
     h4 {
@@ -196,7 +196,7 @@
     small {
       font-size: 16px;
       font-weight: 400;
-      color: dimgray;
+      color: $fontColor;
     }
 
     > section {
@@ -225,7 +225,7 @@
     }
 
     a, time {
-      color: #113DAA;
+      color: whitesmoke;
       font-style: normal;
       font-size: 16px;
     
@@ -251,7 +251,7 @@
     width: 100%;
     text-align: center; 
     align-items: center;  
-    background-color: #192A88; 
+    background-color: white; 
     
     > article {
       @include flexColumn;
@@ -267,7 +267,7 @@
     }
 
     [type="submit"] {
-      background-color: #766fd7 ;
+      background-color: $strongColor ;
       color: whitesmoke;
       border: none;
       font-size: 16px;
