@@ -1,0 +1,184 @@
+// DESKTOP VERSION
+@media (min-width: $desktop) {
+  
+  // ABOUT
+  .about {
+      width: 95%;
+      > article {
+          p {
+              font-size: 18px;
+              text-align: justify;
+              width: 85%;
+          }
+      }
+
+      h2 {
+          font-size: 30px;
+      }
+
+      h4 {
+          font-size: 20px;
+      }
+
+      h6 {
+          width: 30%;
+      }
+  }
+
+  // ABOUT SUBJECT
+  .subject {
+      a {
+        width: 30%;
+      }
+
+      img {
+          height: 50vh;
+      }
+  }
+
+  // ABOUT METHOD
+  .method {
+      > article {
+          flex-wrap: nowrap;
+      }
+
+      aside {
+          height: 60vh;
+      }
+  }
+
+  // ABOUT TEAM
+  .team {
+      > article {
+          width: 100%;
+          justify-content: space-evenly;
+      }
+
+      figure {
+          width: 30%;
+      }
+
+      img {
+          height: 45vh;
+      }
+
+      figcaption {
+          padding: unset;
+          height: 13vh;
+          justify-content: center;
+          position: relative;
+          align-items: center;
+          z-index: 1;
+          > h4 {
+              font-size: 20px;
+          }
+          
+          > aside {
+              @include flexColumn;
+              @include center;
+              row-gap: 1vh;
+              position: absolute;
+              border: 6px solid deepskyblue;
+              z-index: 0;
+              width: 96.7%;
+              height: 0%;
+              bottom: 0%;
+              overflow: hidden;
+              transition: .6s;
+              opacity: 1;
+              &:hover {
+                  opacity: 1;
+                  // bottom: 100%;
+                  height: 90%;
+                  background-color: deepskyblue;
+              }
+              > a {
+                  font-weight: 700;
+                  color: black;
+                  background-color: $strongColor;
+                  padding: 1vh;
+                  border-radius: 5px;
+                  &:hover {
+                      background-color: black;
+                      color: $strongColor;
+                  }
+              }
+          }
+
+          ul {
+              display: flex;
+              column-gap: 4vh;
+          }
+
+          i {
+              color: $strongColor;
+          }
+
+      }
+  }
+
+
+  // CONTACT
+  .contact {
+    
+    h3 {
+      font-size: 26px;
+
+    }
+
+    small {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    > section {
+      column-gap: 4vh;
+    }
+        
+    ul {
+      row-gap: 5vh;
+    }
+
+    i {
+      font-size: 32px;
+    }
+
+    form > aside {
+      flex-direction: row;
+      column-gap:3vh;
+      width: 72.5%;
+    }
+  }
+  
+  form {
+    width: 50%;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+
+    [type="submit"] {
+      padding: 1%;
+      border-radius: 5vh;
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+          background-color: transparent;
+          border: 1px solid deepskyblue;
+        }
+    }
+
+  }
+
+  input, textarea {
+    font-size: 14px;
+    padding: 1vh;
+  }
+
+  textarea {
+    min-height: 20vh;
+  }
+  
+
+  
+  
+  
+}
