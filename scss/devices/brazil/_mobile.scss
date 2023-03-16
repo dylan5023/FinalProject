@@ -3,6 +3,30 @@
         width: 30%;
     }
 
+    // HEADER BRAZIL
+    .brazil {
+        > section {
+          justify-content: center;
+          > aside {
+            display: flex;
+            flex-direction: row;
+            column-gap: 5vh;
+            @include center;
+          }
+        }
+        strong {
+          color: whitesmoke;
+          font-weight: 600;
+          font-size: 35px;
+          border-bottom: 3px solid whitesmoke;
+        }
+        span {
+          font-size: 18px;
+          color: $mainColor;
+          font-weight: 600;
+        }
+    }
+
     figure,
     figcaption,
     aside,
@@ -111,7 +135,7 @@
 
         a {
             color: $fontColor;
-            background-color: $mainColor;
+            background-color: whitesmoke;
             text-transform: uppercase;
             font-weight: 800;
             padding: 5%;

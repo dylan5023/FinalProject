@@ -1,0 +1,15 @@
+@media (min-width: $tablet) {
+  .brazil {
+    > section {
+      > aside {
+        column-gap: 6vh;
+      }
+    }
+    strong {
+      font-size: 60px;
+    }
+    span {
+      font-size: 40px;
+    }
+  }
+}
