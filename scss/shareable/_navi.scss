@@ -54,9 +54,6 @@
         @include center;
         font-size: 23px;
         transition: .5s;
-        &:hover {
-          color: deepskyblue;
-        }
       }
     }
   }
@@ -112,10 +109,6 @@
       font-weight: 700;
       transition: .5s;
     }
-    a:hover {
-      color: deepskyblue;
-      background-color: $mainColor;
-    }
   }
   summary {
     border: 1px solid gainsboro;
@@ -123,10 +116,6 @@
     font-size: 26px;
     transition: .5s;
     color: dimgray;
-    &:hover {
-      background-color: $mainColor;
-      color: whitesmoke;
-    }
   }
 
   // HEADER 
@@ -169,10 +158,6 @@
       height: 5vh;
       font-weight: 600;
       font-size: 17px;
-      &:hover {
-        background-color: $fontColor;
-        color: deepskyblue;
-      }
     }
   }
   // HEADER END 
@@ -203,12 +188,25 @@
       }
       [class*="fa-"]{
         font-size: 35px;
+        &:hover {
+          color: deepskyblue;
+        }
       }
     }
   }
   details{
     a {
       font-size: 35px;
+    }
+    a:hover {
+      color: deepskyblue;
+      background-color: $mainColor;
+    }
+  }
+  summary {
+    &:hover {
+      background-color: $mainColor;
+      color: whitesmoke;
     }
   }
   // HEADER 
@@ -227,6 +225,10 @@
     a {
       width: 25%;
       font-size: 25px;
+      &:hover {
+        background-color: $fontColor;
+        color: deepskyblue;
+      }
     }
   }
   // HEADER END 
