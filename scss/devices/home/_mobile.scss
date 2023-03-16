@@ -42,11 +42,12 @@
       }
       a {
         font-size: 18px;
-        color: $fontColor;
+        color: whitesmoke;
         text-decoration: none;
         transition: .5s;
       }
       i {
+        color: whitesmoke;
         text-decoration: none;
       }
       [class*="fa-"]{
@@ -95,7 +96,7 @@
     position: absolute;
     cursor: pointer;
     > ul {
-      background-color: $fontColor;
+      background-color: $strongColor;
       width: 100%;
       position: absolute;
     }
@@ -113,7 +114,7 @@
       transition: .5s;
     }
     a:hover {
-      color: black;
+      color: deepskyblue;
       background-color: $mainColor;
     }
   }
@@ -162,7 +163,7 @@
       display: flex;
       @include center;
       background-color: $mainColor;
-      color: $fontColor;
+      color: whitesmoke;
       text-decoration: none;
       border-radius: 5px;
       width: 30%;
