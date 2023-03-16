@@ -191,7 +191,7 @@
       padding: 1%;
       border-radius: 10px;
       background-color: $fontColor;
-      border: 3px solid deepskyblue;
+      border: 3px solid $mainColor;
     }
     > figure {
       display: flex;
@@ -225,7 +225,7 @@
         width: 50%;
         height: 5vh;
         border-radius: 10px;
-        color: $fontColor;
+        color: $aColor;
         text-decoration: none;
         background-color: $mainColor;
         font-weight: 600;
@@ -247,7 +247,7 @@
       width: 30%;
       height: 4vh;
       border-radius: 5px;
-      color: royalblue;
+      color: $aColor;
       text-decoration: none;
       background-color: $mainColor;
       font-weight: 600;
@@ -377,7 +377,7 @@
         width: 25%;
         height: 4vh;
         border-radius: 5px;
-        color: royalblue;
+        color: $aColor;
         text-decoration: none;
         background-color: $mainColor;
         font-weight: 600;
