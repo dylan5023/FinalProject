@@ -28,6 +28,7 @@
         display: flex;
         flex-direction: row;
         column-gap: 5vh;
+        padding: 0;
         @include center;
       }
     }
@@ -91,10 +92,6 @@
         text-decoration: none;
         background-color: $mainColor;
         font-weight: 600;
-        &:hover {
-          color: deepskyblue;
-          background-color: $fontColor;
-        }
       }
     }
   }
@@ -113,10 +110,6 @@
       text-decoration: none;
       background-color: $mainColor;
       font-weight: 600;
-      &:hover {
-        color: deepskyblue;
-        background-color: $fontColor;
-      }
     }
     h2 {
       font-size: 30px;
@@ -144,14 +137,9 @@
       box-sizing: border-box;
       column-gap: 1vh;
       background-color: $strongColor;
-      &:hover {
-        background-color: $mainColor;
-        color: $hoverColor;
-      }
       > i {
         font-size: 30px;
         color: $hoverColor;
-        text-shadow: 10px 10px black;
       }
     }
     > figure:nth-child(even) {
@@ -220,10 +208,6 @@
       height: 40vh;
       width: 100%;
       background-color: #1c65b9;
-      &:hover {
-        background-color: $strongColor;
-        color: $hoverColor;
-      }
       > article {
         font-size: 20px;
       }
@@ -251,10 +235,6 @@
         text-decoration: none;
         background-color: whitesmoke;
         font-weight: 600;
-        &:hover {
-          color: $hoverColor;
-          background-color: $strongColor;
-        }
       }
     }
 
