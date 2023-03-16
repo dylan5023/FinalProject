@@ -1,181 +1,6 @@
 // MOBILE VERSION
 @media (min-width: $mobile) {
   
-  body,
-  header > section > aside {
-    @include flexColumn;
-  }
-  
-  body > nav > aside,
-  body > aside,
-  body > aside > ul,
-  body > aside li {
-    @include center;
-  }
-  main {
-    align-items: center;
-    row-gap: 12vh;
-  }
-
-  body {
-    > aside {
-      display: flex;
-      justify-content: space-between;
-      background-color: $mainColor;
-      row-gap: 2vh;
-      width: 100%;
-      height: 10vh;
-      color: $fontColor;
-      > ul {
-        display: flex;
-        width: 50%;
-        font-weight: 600;
-      }
-      > ul:last-child {
-        width: 40%;
-      }
-      li {
-        display: flex;
-        column-gap: 1vh;
-        width: 100%;
-        list-style: none;
-      }
-      a {
-        font-size: 18px;
-        color: $fontColor;
-        text-decoration: none;
-        transition: .5s;
-      }
-      i {
-        text-decoration: none;
-      }
-      [class*="fa-"]{
-        display: flex;
-        @include center;
-        font-size: 23px;
-        transition: .5s;
-        &:hover {
-          color: deepskyblue;
-        }
-      }
-    }
-  }
-
-  /* NAV  */
-  body {
-    > nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
-      padding-left: 2%;
-      height: 10vh;
-      width: 95%;
-      > aside {
-        display: flex;
-        column-gap: 2vh;
-        color: $fontColor;
-      }
-      i {
-        font-size: 30px;
-      }
-      h2 {
-        font-size: 20px;
-        font-weight: 800; 
-      }
-    }
-  }
-  nav > a,
-  nav > ul {
-    display: none;
-  }
-  details {
-    width: 100%;
-    text-align: right;
-    position: absolute;
-    cursor: pointer;
-    > ul {
-      background-color: $fontColor;
-      width: 100%;
-      position: absolute;
-    }
-    li {
-      display: flex;
-    }
-    a {
-      width: 100%;
-      padding: 5%;
-      text-align: left;
-      color: whitesmoke;
-      font-size: 20px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: .5s;
-    }
-    a:hover {
-      color: black;
-      background-color: $mainColor;
-    }
-  }
-  summary {
-    border: 1px solid gainsboro;
-    padding: 2% 3%;
-    font-size: 26px;
-    transition: .5s;
-    color: dimgray;
-    &:hover {
-      background-color: $mainColor;
-      color: whitesmoke;
-    }
-  }
-
-  // HEADER 
-  header {
-    display: flex;
-    height: 30vh;
-    background-image: url('/home_img/header_img.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    > section {
-      display: flex;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(231, 228, 228, 0.5);
-      > aside {
-        display: flex;
-        padding-left: 2vh;
-        row-gap: 2vh;
-        width: 90%;
-        color: $fontColor;
-      }
-    }
-    h1 {
-      font-size: 20px;
-      font-weight: 800;
-    }
-    h3 {
-      font-size: 18px;
-    }
-    a {
-      display: flex;
-      @include center;
-      background-color: $mainColor;
-      color: $fontColor;
-      text-decoration: none;
-      border-radius: 5px;
-      width: 30%;
-      height: 5vh;
-      font-weight: 600;
-      font-size: 17px;
-      &:hover {
-        background-color: $fontColor;
-        color: deepskyblue;
-      }
-    }
-  }
-  // HEADER END 
   // ABOUT
   .about,
   .team,
@@ -338,7 +163,6 @@
       }
   }
 
-
   // CONTACT
   .contact {
     padding-top: 5vh;
@@ -362,7 +186,7 @@
     h3 {
       font-size: 20px;
       font-weight: 600;
-      color: whitesmoke;
+      color: $mainColor;
     }
 
     h4 {
@@ -372,7 +196,7 @@
     small {
       font-size: 16px;
       font-weight: 400;
-      color: dimgray;
+      color: $fontColor;
     }
 
     > section {
@@ -401,7 +225,7 @@
     }
 
     a, time {
-      color: #113DAA;
+      color: whitesmoke;
       font-style: normal;
       font-size: 16px;
     
@@ -427,7 +251,7 @@
     width: 100%;
     text-align: center; 
     align-items: center;  
-    background-color: #192A88; 
+    background-color: white; 
     
     > article {
       @include flexColumn;
@@ -443,7 +267,7 @@
     }
 
     [type="submit"] {
-      background-color: #766fd7 ;
+      background-color: $strongColor ;
       color: whitesmoke;
       border: none;
       font-size: 16px;
@@ -461,120 +285,6 @@
     border: 1px solid dimgray;
   }
   
-
-  /* FOOTER */
-  footer {
-    row-gap: 3vh;
-    padding-top: 5vh;
-
-    > article {
-      @include flexColumn;
-      padding: 3vh;
-      row-gap: 4vh;
-    }
-
-    
-    figure {
-      display: flex;
-      align-items: center;
-      column-gap: 3vh;
-      row-gap: 4vh;
-      
-      p {
-        font-size: 18px;
-        color: #192A88;
-      }
-    }
-
-    img {
-      width: 25%;
-    }
-  
-    h2 {
-      font-size: 36px;
-      font-weight: 800;
-    }
-  
-    aside {
-      @include flexColumn;
-      row-gap: 3vh;
-
-      > ul {
-        @include flexColumn;
-        row-gap: 1vh;
-      }
-
-      li {
-        display: flex;
-        align-items: center;
-        column-gap: 2vh;
-      }
-
-      a {
-        font-size: 18px;
-        text-transform: uppercase;
-      }
-
-    }
-  
-    h3 {
-      font-size: 26px;
-      font-style: italic;
-      color: $fontColor;
-    }
-  
-    section {
-      @include flexColumn;
-      row-gap: 2vh;
-    }
-
-  }
-
-  .icons {
-    > ul {
-      display: flex;
-      column-gap: 3vh;
-    }
-      
-    li {
-      display: flex;
-    }
-    
-    a {
-      border: 2px solid $fontColor;
-      border-radius: 60%;
-      padding: 2vh;
-      font-size: 28px;
-      color: #192A88 ;
-    }
-  
-  }
-
-  .bottombar {
-    @include flexColumn;
-    @include center;
-    text-align: center;
-    background-color: $mainColor;
-    padding: 3vh;
-  
-    p {
-      font-size: 18px;
-    }
-  
-    a {
-      color: #192A88;
-    }
-  
-    > a {
-      display: none;
-    }
-  
-  
-    [class*="fa-"] {
-      font-size: 24px;
-    }
-  
-  }
 }
 
 
