@@ -28,6 +28,11 @@
       }
     }
   }
+  details{
+    a {
+      font-size: 35px;
+    }
+  }
   // HEADER 
   header {
     > section {
@@ -47,4 +52,87 @@
     }
   }
   // HEADER END 
+  .intro {
+    img {
+      width: 40%;
+      height: 35vh;
+    }
+    > figure {
+      > figcaption {
+        row-gap: 4vh;
+      }
+      h4 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 30px;
+      }
+      span {
+        font-size: 30px;
+        font-weight: 800;
+      }
+      a {
+        width: 35%;
+        font-size: 28px;
+      }
+    }
+  }
+  .assignment {
+    h2 {
+      font-size: 45px;
+    }
+    > section {
+      > p {
+        font-size: 30px;
+      }
+    }
+    > figure {
+      > i {
+        font-size: 60px;
+      }
+      h4 {
+        font-size: 35px;
+      }
+      h6 {
+        font-size: 30px;
+      }
+    }
+    a {
+      width: 35%;
+      height: 5vh;
+      font-size: 30px;
+    }
+  }
+  .package{
+    aside {
+      height: 50vh;
+      row-gap: 5vh;
+    }
+    section {
+      > a {
+        font-size: 40px;
+        height: 100%;
+      }
+    }
+    > section {
+      h2 {
+        font-size: 45px;
+      }
+      > p {
+        font-size: 30px;
+      }
+    }
+    h3 {
+      font-size: 45px;
+    }
+    h4 {
+      font-size: 40px;
+    }
+    h5 {
+      font-size: 35px;
+    }
+    h6 {
+      font-size: 30px;
+    }
+  }
 }
