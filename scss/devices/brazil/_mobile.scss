@@ -17,6 +17,15 @@
         width: 90%;
     }
 
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
     // INTRODUTION
     .introduction {
         padding-top: 10vh;
@@ -25,16 +34,16 @@
             row-gap: 5vh;
             width: 100%;
         }
-
+        
         h1 {
             text-align: center;
-            font-size: 30px;
+            font-size: 35px;
         }
-
+        
         img {
             width: 100%;
         }
-
+        
         figcaption {
             row-gap: 4vh;
             text-align: center;
@@ -42,6 +51,72 @@
                 color: $mainColor;
                 font-weight: 600;
             }
+        }
+    }
+    
+    // ASSIGNMENTS
+    .assignments {
+        row-gap: 5vh;
+
+        > article {
+            row-gap: 10vh;
+        }
+        
+        figure {
+            background-color: $strongColor;
+            border-radius: 20px;
+            width: 84%;
+            align-items: center;
+            row-gap: 2vh;
+            padding: 8%;
+        }
+
+        figcaption {
+            align-items: center;
+            row-gap: 3vh;
+            width: 100%;
+            color: whitesmoke;
+        }
+
+        aside {
+            align-items: center;
+            row-gap: 5px;
+
+            > p {
+                color: $fontColor;  
+                font-weight: 700;
+                font-size: 17px;
+            }
+        }
+
+        small {
+            color: $fontColor;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+
+        h3 {
+           font-size: 24px;
+        }
+        
+        h4 {
+            letter-spacing: 2px;
+        }
+
+        img {
+            width: 25vh;
+            height: 25vh;
+        }
+
+        a {
+            color: $fontColor;
+            background-color: $mainColor;
+            text-transform: uppercase;
+            font-weight: 800;
+            padding: 5%;
+            width: 100%;
+            text-align: center;
         }
     }
 }
