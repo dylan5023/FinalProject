@@ -1,21 +1,6 @@
 // MOBILE VERSION
 @media (min-width: $mobile) {
   
-  body,
-  header > section > aside {
-    @include flexColumn;
-  }
-  
-  body > nav > aside,
-  body > aside,
-  body > aside > ul,
-  body > aside li {
-    @include center;
-  }
-  main {
-    align-items: center;
-    row-gap: 12vh;
-  }
   // ABOUT
   .about,
   .team,
