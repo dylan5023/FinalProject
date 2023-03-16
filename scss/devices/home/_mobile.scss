@@ -27,12 +27,12 @@
       }
 
       span {
-          color: royalblue;
+          color: $hoverColor;
       }
 
       strong {
           font-size: 22px;
-          color: navy;
+          color: $mainColor;
           text-align: center;
           padding-top: 3vh;
       }
@@ -66,8 +66,8 @@
       }
 
       a {
-        color: $strongColor;
-        background-color: navy;
+        color: whitesmoke;
+        background-color: $mainColor;
         font-weight: 600;
         width: 35%;
         text-align: center;
@@ -95,6 +95,14 @@
           padding-bottom: 3vh;
       }
 
+      p, i {
+          color: gainsboro;
+      }
+
+      h3 {
+          color: lightblue;
+      }
+
       i {
           font-size: 50px;
       }
@@ -108,7 +116,7 @@
       }
         
       > h3 {
-          color: navy;
+          color: $fontColor;
           font-weight: 700;
           font-size: 22px;
       }
@@ -129,7 +137,7 @@
 
       figcaption {
           @include flexColumn;
-          background-color: $strongColor;
+          background-color: gainsboro;
           padding: 3vh;
           > h4 {
               font-weight: 800;
