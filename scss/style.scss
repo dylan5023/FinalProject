@@ -4,11 +4,13 @@
 @import './normalize';
 
 
-// NAVI AND FOOTER 
-@import './shareable/navi';
-@import './shareable/footer';
+
 
 // VERSION
 @import './devices/mobile';
 @import './devices/tablet';
 @import './devices/desktop';
+
+// NAVI AND FOOTER 
+@import './shareable/navi';
+@import './shareable/footer';
