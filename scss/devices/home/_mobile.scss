@@ -14,7 +14,7 @@
   }
   main {
     align-items: center;
-    row-gap: 15vh;
+    row-gap: 12vh;
   }
 
   body {
@@ -177,26 +177,28 @@
   }
   // HEADER END 
   // ABOUT
-  .about img {
-      width: 25%;
+  .about,
+  .team,
+  .subject,
+  .method {
+      @include flexColumn;
   }
 
   .about {
-      @include flexColumn;
       align-items: center;
       width: 90%;
-      padding-top: 5vh;
+      row-gap: 4vh;
+      padding-top: 7vh;
       > article {  
           @include flexColumn;
           align-items: center;
-          row-gap: 2vh;
+          row-gap: 3vh;
           text-align: center;
-          // padding-bottom: 10vh;       
-      }
-
+        }
+        
       h6 {
-          border: 2px solid $mainColor;
-          width: 50%;
+          border: 1px solid $fontColor;
+          width: 60%;
       }
 
       span {
@@ -204,13 +206,137 @@
       }
 
       strong {
-          font-size: 23px;
+          font-size: 22px;
           color: navy;
-          padding-top: 5vh;
-          padding-bottom: 5vh;
+          text-align: center;
+          padding-top: 3vh;
+      }
+
+      h2 {
+          font-size: 25px;
+          text-align: center;
+          font-weight: 800;
+      }
+
+      h4 {
+          font-size: 17px;
       }
   }
 
+  // ABOUT SUBJECT
+  .subject {
+      figure {
+          width: 100%;
+          @include flexColumn;
+      }
+
+      img {
+          width: 100%;
+      }
+
+      figcaption {
+          @include flexColumn;
+          align-items: center;
+          row-gap: 3vh;
+      }
+
+      a {
+        color: $strongColor;
+        background-color: navy;
+        font-weight: 600;
+        width: 35%;
+        text-align: center;
+        padding: 1vh;
+      }
+
+      p {
+        font-weight: 500;
+      }
+  }
+
+  // ABOUT METHOD
+  .method {
+      aside {
+          @include flexColumn;
+          @include center;
+          row-gap: 2vh;
+          text-align: center;
+          background-color: $mainColor;
+          height: 40vh;
+          padding: 4vh;
+      }
+
+      h4 {
+          padding-bottom: 3vh;
+      }
+
+      i {
+          font-size: 50px;
+      }
+  }
+
+  // ABOUT TEAM
+  .team {
+      > article {
+          @include flexColumn;
+          row-gap: 5vh;
+      }
+        
+      > h3 {
+          color: navy;
+          font-weight: 700;
+          font-size: 22px;
+      }
+
+      h4 {
+          color: black;
+      }
+
+      figure {
+          @include flexColumn;
+          width: 100%;
+      }
+
+      img {
+          width: 100%;
+          height: 40vh;
+      }
+
+      figcaption {
+          @include flexColumn;
+          background-color: $strongColor;
+          padding: 3vh;
+          > h4 {
+              font-weight: 800;
+              font-size: 20px;
+          }
+      }
+
+      aside {
+          display: none;
+      }
+
+      ul {
+          display: flex;
+          justify-content: center;
+      }
+
+      small {
+          font-weight: 600;
+      }
+
+      .korea {
+          color: red;
+      }
+
+      .brazil {
+          color: green;
+      }
+
+      .thailand {
+          color: blue;
+      }
+  }
 
 
   // CONTACT
@@ -236,7 +362,7 @@
     h3 {
       font-size: 20px;
       font-weight: 600;
-      color: salmon;
+      color: whitesmoke;
     }
 
     h4 {
@@ -245,18 +371,19 @@
 
     small {
       font-size: 16px;
-      font-weight: 300;
+      font-weight: 400;
+      color: dimgray;
     }
 
     > section {
       @include flexColumn;
-      width: 95%;
+      width: 85%;
       row-gap: 5vh;
     }
        
     ul {
       @include flexColumn;
-      row-gap: 1vh;
+      row-gap: 3vh;
       padding: 2%;
     }
 
@@ -271,7 +398,6 @@
 
     aside {
       @include flexColumn;
-      row-gap: 1vh;
     }
 
     a, time {
@@ -279,6 +405,18 @@
       font-style: normal;
       font-size: 16px;
     
+    }
+
+    a {
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
+    }
+
+    i {
+      font-size: 22px;
+      color: $fontColor;
     }
   }
   
@@ -289,7 +427,7 @@
     width: 100%;
     text-align: center; 
     align-items: center;  
-    background-color: #FDEBD0; 
+    background-color: #192A88; 
     
     > article {
       @include flexColumn;
@@ -305,9 +443,14 @@
     }
 
     [type="submit"] {
-      background-color: #113DAA;
+      background-color: #766fd7 ;
       color: whitesmoke;
       border: none;
+      font-size: 16px;
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
     }
 
   }
@@ -315,6 +458,7 @@
   input, textarea {
     padding: 2vh;
     width: 80%;
+    border: 1px solid dimgray;
   }
   
 
@@ -329,15 +473,17 @@
       row-gap: 4vh;
     }
 
-    p {
-      font-size: 18px;
-      color: dimgray;
-    }
-
+    
     figure {
       display: flex;
       align-items: center;
-      column-gap: 2vh;
+      column-gap: 3vh;
+      row-gap: 4vh;
+      
+      p {
+        font-size: 18px;
+        color: #192A88;
+      }
     }
 
     img {
@@ -365,7 +511,7 @@
       }
 
       a {
-        font-size: 20px;
+        font-size: 18px;
         text-transform: uppercase;
       }
 
@@ -374,12 +520,12 @@
     h3 {
       font-size: 26px;
       font-style: italic;
-      color: purple;
+      color: $fontColor;
     }
   
     section {
       @include flexColumn;
-      row-gap: 1vh;
+      row-gap: 2vh;
     }
 
   }
@@ -391,13 +537,15 @@
     }
       
     li {
-      border: 2px solid $fontColor;
-      border-radius: 50%;
-      padding: 2vh;
+      display: flex;
     }
     
     a {
-      font-size: 26px;
+      border: 2px solid $fontColor;
+      border-radius: 60%;
+      padding: 2vh;
+      font-size: 28px;
+      color: #192A88 ;
     }
   
   }
@@ -411,11 +559,11 @@
   
     p {
       font-size: 18px;
-      color: $fontColor;
     }
   
     a {
-      color: purple;
+      color: #192A88;
+      font-weight: 500;
     }
   
     > a {
