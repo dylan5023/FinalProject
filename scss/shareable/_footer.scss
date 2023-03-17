@@ -1,0 +1,351 @@
+// MOBILE VERSION
+@media (min-width: $mobile) {
+    footer {
+        row-gap: 3vh;
+        padding-top: 5vh;
+
+        > article {
+            @include flexColumn;
+            padding: 3vh;
+            row-gap: 4vh;
+        }
+
+        figure {
+            display: flex;
+            align-items: center;
+            column-gap: 3vh;
+            row-gap: 4vh;
+            p {
+                font-size: 18px;
+                color: $mainColor;
+            }
+        
+        }
+
+        img {
+            width: 25%;
+        }
+  
+        h2 {
+            font-size: 36px;
+            font-weight: 800;
+        }
+  
+        aside {
+            @include flexColumn;
+            row-gap: 3vh;
+
+            > ul {
+                @include flexColumn;
+                row-gap: 1vh;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                column-gap: 2vh;
+            }
+
+            a {
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+
+        }
+  
+        h3 {
+            font-size: 26px;
+            font-style: italic;
+            color: $mainColor;
+        }
+  
+        section {
+            @include flexColumn;
+            row-gap: 2vh;
+        }
+    }
+
+    .icons {
+        > ul {
+            display: flex;
+            column-gap: 3vh;
+        }
+      
+        li {
+            display: flex;
+        }
+        
+        a {
+            border: 2px solid $fontColor;
+            border-radius: 60%;
+            padding: 2vh;
+            font-size: 28px;
+            color: $mainColor ;
+        }
+    
+    }
+
+    .bottombar {
+        @include flexColumn;
+        @include center;
+        text-align: center;
+        background-color: $mainColor;
+        padding: 3vh;
+  
+        p {
+            font-size: 18px;
+            color: $fontColor;
+        }
+    
+        a {
+            color: white;
+        }
+    
+        > a {
+            display: none;
+        }
+    
+    
+        [class*="fa-"] {
+            font-size: 24px;
+        }
+  
+    }
+
+}
+
+// TABLET VERSION
+@media (min-width: $tablet) {
+    footer {
+        row-gap: 2vh;
+
+        > article {
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 2vh;
+            column-gap: 1vh;
+        }
+
+        figure {
+            flex-direction: column;
+            align-items: flex-start;
+            column-gap: 3vh;
+            row-gap: 1vh;
+            width: 30%;
+        }
+
+        img {
+            width: 35%;
+        }
+
+        figcaption {
+            > h2 {
+                font-size: 50px;
+                font-weight: 900;
+            }
+
+            > p {
+                font-size: 26px;
+            }
+        }
+  
+  
+        aside {
+            > ul {
+                row-gap: 2vh;
+            }
+
+            li {
+                column-gap: 3vh;
+            }
+
+            a {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+        }
+  
+        h3 {
+            font-size: 28px;
+        }
+  
+        section {
+        row-gap: 2vh;
+        }
+
+    }
+
+    .icons {
+        > ul {
+            flex-direction: column;
+            row-gap: 2vh;
+        }
+
+        li {
+            display: flex;
+            @include center;
+        }
+    
+        a {
+            font-size: 30px;
+            background-color: transparent;
+            border: 2px solid $aColor;
+            border-radius: 50%;
+            padding: 1vh;
+            transition: .5s;
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+  
+    }
+
+    .bottombar {
+        align-items: flex-start;
+        padding-top: 4vh;
+
+        > article {
+            text-align: left;
+        }
+    
+        p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    
+    }
+
+    [class*="fa-"] {
+        font-size: 28px;
+        transition: .5s;
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+
+}
+
+// DESKTOP VERSION
+@media (min-width: $desktop) {
+    footer {
+        row-gap: 2vh;
+    
+        > article {
+          padding: 1vh;
+          justify-content: space-evenly;
+    
+        }
+    
+        
+        figure {
+          row-gap: 2vh;
+          width: 25%;
+        }
+        
+        img {
+          width: 30%;
+        }
+    
+        figcaption {
+          > h2 {
+            font-size: 40px;
+          }
+          
+          > p {
+            font-size: 24px ;
+          }
+
+        }
+      
+        aside {
+          > ul {
+                row-gap: 3vh;
+            }
+    
+            li {
+                column-gap: 2vh;
+            }
+    
+            a {
+                font-size: 18px;
+                font-weight: 600;
+                transition: .5s;
+            }
+          
+            a:hover {
+                color: $hoverColor;
+                
+            }
+    
+        }
+    
+        h4 {
+          font-size: 16px;
+        }
+      
+        h3 {
+          font-weight: 800;
+        }
+    
+    }
+    
+    .icons {
+        > ul {
+            flex-direction: row;
+            column-gap: 2vh;
+        }
+        
+        a {
+            font-size: 26px;
+            transition: .5s;
+            &:hover {
+                color: $hoverColor;
+                background-color: transparent ;
+            }
+        }
+      
+    }
+    
+    .bottombar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4vh;
+
+        > article {
+            display: flex;
+            column-gap: 4vh;
+            
+            p {
+                font-size: 20px;
+                font-weight: 600;
+                > a {
+                    transition: .5s;   
+                }
+            }
+
+            a:hover {
+                color: $hoverColor;
+            }
+        
+        }
+      
+        > a {
+            display: flex;
+            justify-content: center;
+        }
+    
+        
+        > [class*="fa-"] {
+            font-size: 60px;
+            transition: .5s;
+            color: whitesmoke;
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+    }
+
+
+}
