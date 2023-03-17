@@ -1,4 +1,22 @@
 // DESKTOP VERSION
 @media (min-width: $desktop) {
-  
+    .thai {
+        > section {
+            > aside {
+                column-gap: 15vh;
+            }
+        }
+
+        strong {
+          font-size: 70px;
+        }
+
+        span {
+          font-size: 40px;
+        }
+    }
+
+    .thailand {
+        row-gap: 8vh;
+    }
 }

@@ -5,7 +5,6 @@
     .thailand > section > article,
     body,
     header > section > aside ,
-    figure,
     figcaption{
         @include flexColumn;
     }
@@ -58,21 +57,25 @@
     .introduce {
         padding-top: 5vh;
         width: 100%;
-        row-gap: 5vh;
+        row-gap: 2vh;
         > figure {
-            padding-left: 2%;
-            width: 95%;
-            align-items: center;
-            justify-content: center;
+            // padding-left: 2%;
+            // width: 95%;
+            @include flexColumn;
+            text-align: center;
             @include center;
-            flex-direction: row-reverse;
+            row-gap: 5vh;
+            flex-direction: column-reverse;
+            // flex-direction: row-reverse;
         }
 
         figcaption {
-            width: 90%;
+            width: 100%;
+            // height: 15vh;
             row-gap: 1vh;
             align-items: center;
             text-align: left;
+            // background-color: gainsboro;
         }
 
         h2 {
@@ -94,8 +97,8 @@
         a {
             display: flex;
             @include center;
-            width: 60%;
-            height: 3vh;
+            width: 40%;
+            height: 4vh;
             border-radius: 20px;
             color: whitesmoke;
             text-decoration: none;
@@ -206,6 +209,7 @@
         }
 
         figure {
+            @include flexColumn;
             background-color: whitesmoke;
             width: 100%;
             height: 42vh;
@@ -221,7 +225,7 @@
         figcaption {
             width: 80%;
             row-gap: 1vh;
-            justify-content: center;
+            @include center;
             
         }
 
@@ -230,7 +234,6 @@
             font-weight: 800;
             color: $mainColor;
             text-transform: uppercase;
-            
         }
 
         h3 {
@@ -256,20 +259,19 @@
     .price {
         width: 100%;
         row-gap: 5vh;
+        @include center;
         
-        
-               
         > article {
             background-image: url("/thai_img/bg-price.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             height: 30vh;
+            width: 100%;
 
             > section {
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                @include center;
                 width: 100%;
                 height: 100%;
                 background-color:rgba(151, 149, 176, 0.8)
@@ -284,11 +286,10 @@
         }
 
         > section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            row-gap: 2vh;
+            @include flexColumn;
+            @include center;
+            row-gap: 5vh;
+            width: 90%;
 
             > aside:nth-child(1) {
                 background-color: #a64726;
