@@ -15,6 +15,10 @@
     }
   }
 
+  h2 {
+      font-size: 35px;
+  }
+
   // INTRODUCTION 
   .introduction {
       width: 95%;
@@ -25,9 +29,14 @@
           border-radius: 15px;
       }
 
+      figcaption {
+          padding: 3%;
+      }
+
       img {
           width: 70vh;
           height: 50vh;
+          border-radius: 15px 0px 0px 15px;
       }
 
       h1 {
@@ -35,7 +44,8 @@
       }
 
       p {
-          font-size: 20px;
+          font-size: 18px;
+         
       }
   }
 }
