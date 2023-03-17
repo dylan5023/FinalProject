@@ -13,6 +13,11 @@
     }
   }
 
+  h2 {
+      font-size: 45px;
+  }
+
+  // INTRODUCTION
   .introduction {
       h1 {
           font-size: 60px;
@@ -21,5 +26,62 @@
       p {
           font-size: 27px;
       }
+  }
+
+  // ASSIGNMENTS
+  .assignments {
+      width: 97%;
+      > p {
+          font-size: 25px;
+      }
+
+      > article {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          column-gap: 2vh;
+          row-gap: 3vh;
+      }
+
+      figure {
+          width: 32%;
+          transition: .6s;
+          &:hover {
+              scale: 1.03;
+          }
+      }
+
+      figcaption {
+          transition: .6s;
+          &:hover {
+              color: $hoverColor;
+          }
+      }
+
+      h3 {
+          font-size: 37px;
+      }
+
+      aside {
+          font-size: 27px;
+          row-gap: 1vh;
+          > p {
+              font-size: 28px;
+          }
+
+          > a {
+              transition: .6s;
+              &:hover {
+                background-color: $hoverColor;
+                color: whitesmoke;
+              }
+          }
+      }
+
+      small {
+          font-size: 22px;
+          
+      }
+
   }
 }
