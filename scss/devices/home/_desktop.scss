@@ -7,7 +7,7 @@
       > article {
           p {
               font-size: 18px;
-              text-align: justify;
+              text-align: center;
               width: 85%;
           }
       }
@@ -21,7 +21,7 @@
       }
 
       h6 {
-          width: 30%;
+          width: 25%;
       }
   }
 
@@ -88,19 +88,19 @@
               opacity: 1;
               &:hover {
                   opacity: 1;
-                  // bottom: 100%;
                   height: 90%;
                   background-color: deepskyblue;
               }
+              
               > a {
                   font-weight: 700;
-                  color: black;
-                  background-color: $strongColor;
+                  color: $mainColor;
+                  background-color: whitesmoke;
                   padding: 1vh;
                   border-radius: 5px;
                   &:hover {
-                      background-color: black;
-                      color: $strongColor;
+                      background-color: transparent;
+                      color: whitesmoke;
                   }
               }
           }
@@ -111,7 +111,7 @@
           }
 
           i {
-              color: $strongColor;
+              color: whitesmoke;
           }
 
       }
