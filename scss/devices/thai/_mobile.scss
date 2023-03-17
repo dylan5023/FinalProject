@@ -1,12 +1,109 @@
 // MOBILE VERSION
 @media (min-width: $mobile) {
-    main {
-        padding-top: 5vh;
-        row-gap: 10vh;
+    .thailand,
+    .thailand > section,
+    body,
+    header > section > aside {
+    @include flexColumn;
+    }
+
+    body > nav > aside,
+    body > aside,
+    body > aside > ul,
+    body > aside li,
+    .thailand,
+    .thailand > section {
+    @include center;
     }
 
     img {
-        width: 40%;
+      width: 20%;
+    }
+    .thailand {
+      row-gap: 5vh;
+    }
+
+    .thai {
+      > section {
+        justify-content: center;
+        > aside {
+          display: flex;
+          flex-direction: row;
+          column-gap: 5vh;
+          padding: 0;
+          @include center;
+        }
+      }
+      strong {
+        color: whitesmoke;
+        font-weight: 600;
+        font-size: 35px;
+        border-bottom: 3px solid whitesmoke;
+      }
+      span {
+        font-size: 18px;
+        color: $mainColor;
+        font-weight: 600;
+      }
+    }
+
+
+    .weekly {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        row-gap: 5vh;
+        > article {
+            row-gap: 1vh;
+        }
+
+        h2 {
+            color: $mainColor;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        p {
+            color: $fontColor;
+        }
+
+        > section {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            row-gap: 5vh;
+        }
+
+        figure {
+            background-color: #4b66ae;
+            width: 100%;
+            height: 30vh;
+            padding: 2%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        img {
+            width: 60%;
+        }
+
+        // figcaption {
+            
+        // }
+
+        // h4 {
+
+        // }
+
+        // h3 {
+
+        // }
+
+        // a {
+            
+        // }
+
     }
 
     .price {
@@ -97,6 +194,7 @@
         }
 
         h4 {
+            color: #ffeeca;
             border-bottom: 3px dashed darkblue;
             padding-bottom: 1vh;
             font-size: 24px;
@@ -105,6 +203,7 @@
         strong {
             font-size: 40px;
             font-weight: 800;
+            color: #dbecea;
         }
 
         a {
