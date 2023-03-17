@@ -2,58 +2,190 @@
 @media (min-width: $mobile) {
     .thailand,
     .thailand > section,
+    .thailand > section > article,
     body,
-    header > section > aside {
-    @include flexColumn;
+    header > section > aside ,
+    figure,
+    figcaption{
+        @include flexColumn;
     }
 
     body > nav > aside,
     body > aside,
     body > aside > ul,
     body > aside li,
-    .thailand,
-    .thailand > section {
-    @include center;
+    .thailand
+    // .thailand > section 
+    {
+        @include center;
     }
-
     img {
       width: 20%;
     }
     .thailand {
       row-gap: 5vh;
     }
-
     .thai {
-      > section {
-        justify-content: center;
-        > aside {
-          display: flex;
-          flex-direction: row;
-          column-gap: 5vh;
-          padding: 0;
-          @include center;
+        > section {
+            justify-content: center;
+            > aside {
+                display: flex;
+                flex-direction: row;
+                column-gap: 5vh;
+                padding: 0;
+                @include center;
+            }
         }
-      }
-      strong {
-        color: whitesmoke;
-        font-weight: 600;
-        font-size: 35px;
-        border-bottom: 3px solid whitesmoke;
-      }
-      span {
-        font-size: 18px;
-        color: $mainColor;
-        font-weight: 600;
-      }
+        strong {
+            color: whitesmoke;
+            font-weight: 600;
+            font-size: 35px;
+            border-bottom: 3px solid whitesmoke;
+        }
+        span {
+            font-size: 18px;
+            color: $mainColor;
+            font-weight: 600;
+        }
+    }
+
+    p {
+        line-height: 1.5;
+        color: $fontColor;
+    }
+
+    // INTRODUCE
+    .introduce {
+        padding-top: 5vh;
+        width: 100%;
+        row-gap: 5vh;
+        > figure {
+            padding-left: 2%;
+            width: 95%;
+            align-items: center;
+            justify-content: center;
+            @include center;
+            flex-direction: row-reverse;
+        }
+
+        figcaption {
+            width: 90%;
+            row-gap: 1vh;
+            align-items: center;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 24px;
+            padding-bottom: 2vh;
+        }
+
+        img {
+            width: 40%;
+            height: 25vh;
+        }
+
+        small {
+            font-size: 10px;
+            font-weight: 500;
+            color: $fontColor;
+        }
+
+        a {
+            display: flex;
+            @include center;
+            width: 60%;
+            height: 3vh;
+            border-radius: 20px;
+            color: whitesmoke;
+            text-decoration: none;
+            background-color: $mainColor;
+            font-weight: 600;
+        }
+    }
+
+    .nattar {
+        @include flexColumn;
+        row-gap: 4vh;
+        padding: 4vh;
+        align-items: center;
+        > article {
+            width: 100%;
+           @include flexColumn;
+           row-gap: 2vh; 
+           align-items: center;
+           text-align: justify;
+        }
+
+        h3 {
+            color: $fontColor;
+            font-size: 26px;
+            text-transform: uppercase
+        }
+
+        span {
+            color: $mainColor;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+    }
+
+    .languages {
+        @include flexColumn;
+        row-gap: 2vh;
+        width: 90%;
+
+        > li {
+            display: flex;
+            width: 100%;
+            height: 4vh;
+            background-color: lightgray;
+            &:first-child > h6 {
+                width: 100%;
+            }
+
+            &:nth-child(2) > h6 {
+                width: 80%;
+            }
+
+            &:nth-child(3) > h6 {
+                width: 50%;
+            }
+
+            &:nth-child(4) > h6 {
+                width: 30%;
+            }
+        }
+
+        h6 {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background-color: $strongColor;
+        }
+
+        small {
+            padding-left: 1vh;
+            color: white;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
     }
 
 
+    // WEEKLY
     .weekly {
-        align-items: center;
-        justify-content: center;
+        @include flexColumn;
+        @include center;
         text-align: center;
         row-gap: 5vh;
         > article {
+            width: 90%;
             row-gap: 1vh;
         }
 
@@ -68,47 +200,63 @@
         }
 
         > section {
-            display: flex;
-            flex-direction: column;
+            @include flexColumn;
             width: 80%;
             row-gap: 5vh;
         }
 
         figure {
-            background-color: #4b66ae;
+            background-color: whitesmoke;
             width: 100%;
-            height: 30vh;
-            padding: 2%;
+            height: 42vh;
             align-items: center;
-            justify-content: center;
-            text-align: center;
+            row-gap: 2vh;
         }
 
         img {
-            width: 60%;
+            width: 100%;
+            height: 20vh;
         }
 
-        // figcaption {
+        figcaption {
+            width: 80%;
+            row-gap: 1vh;
+            justify-content: center;
             
-        // }
+        }
 
-        // h4 {
-
-        // }
-
-        // h3 {
-
-        // }
-
-        // a {
+        h4 {
+            font-size: 28px;
+            font-weight: 800;
+            color: $mainColor;
+            text-transform: uppercase;
             
-        // }
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 14px;
+            color: white;
+            background-color: $mainColor;
+            border-radius: 25px;
+            border: 2px solid $mainColor;
+            width: 40%;
+            padding: 1%; 
+        }
 
     }
 
+    // PRICE
     .price {
         width: 100%;
         row-gap: 5vh;
+        
         
                
         > article {
@@ -144,24 +292,9 @@
 
             > aside:nth-child(1) {
                 background-color: #a64726;
-                // background-color: #bf3b3a;
-                // background-color: #ff8066;
-                // background-image: linear-gradient(to right top,
-                // #d16ba5,
-                // #c777b9,
-                // #ba83ca,
-                // #aa8fd8,
-                // #9a9ae1,
-                // #8aa7ec,
-                // #79b3f4,
-                // #69bff8,
-                // #52cffe,
-                // #41dfff,
-                // #5ffbf1 );
             }
 
             > aside:nth-child(2) {
-                // background-color: #023879;
                 background-color: #17468c;
             }
 
