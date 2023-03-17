@@ -1,0 +1,242 @@
+// MOBILE VERSION
+@media (min-width: $mobile) {
+  .korea,
+  .korea > section,
+  body,
+  header > section > aside {
+    @include flexColumn;
+  }
+  
+  body > nav > aside,
+  body > aside,
+  body > aside > ul,
+  body > aside li,
+  .korea,
+  .korea > section {
+    @include center;
+  }
+  img {
+    width: 20%;
+  }
+  .korea {
+    row-gap: 5vh;
+  }
+  .korean {
+    > section {
+      justify-content: center;
+      > aside {
+        display: flex;
+        flex-direction: row;
+        column-gap: 5vh;
+        padding: 0;
+        @include center;
+      }
+    }
+    strong {
+      color: whitesmoke;
+      font-weight: 600;
+      font-size: 35px;
+      border-bottom: 3px solid whitesmoke;
+    }
+    span {
+      font-size: 18px;
+      color: $mainColor;
+      font-weight: 600;
+    }
+  }
+  
+  .intro {
+    display: flex;
+    width: 95%;
+    padding-top: 5%;
+    img {
+      width: 35%;
+      padding: 1%;
+      border-radius: 10px;
+      background-color: $fontColor;
+      border: 3px solid $mainColor;
+    }
+    > figure {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      @include center;
+      > figcaption {
+        @include flexColumn;
+        @include center;
+        row-gap: 2vh;
+        padding: 2%;
+        width: 90%;
+      }
+      h4 {
+        font-size: 20px;
+        color: $fontColor;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+        color: $fontColor;
+      }
+      span {
+        font-size: 18px;
+        color: royalblue;
+        font-weight: 700;
+      }
+      a {
+        display: flex;
+        @include center;
+        width: 50%;
+        height: 5vh;
+        border-radius: 10px;
+        color: whitesmoke;
+        text-decoration: none;
+        background-color: $mainColor;
+        font-weight: 600;
+      }
+    }
+  }
+  .assignment {
+    display: flex;
+    row-gap: 2vh;
+    width: 95%;
+    a {
+      display: flex;
+      @include center;
+      font-size: 17px;
+      width: 30%;
+      height: 4vh;
+      border-radius: 5px;
+      color: whitesmoke;
+      text-decoration: none;
+      background-color: $mainColor;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    h6 {
+      line-height: 1.5;
+      font-size: 17px;
+    }
+    > section {
+      @include flexColumn;
+      @include center;
+      color: $fontColor;
+      width: 100%;
+      row-gap: 2vh;
+      > p {
+        width: 80%;
+        text-align: center;
+      }
+    }
+    > figure {
+      display: flex;
+      align-items: flex-end;
+      width: 95%;
+      padding: 2%;
+      box-sizing: border-box;
+      column-gap: 1vh;
+      background-color: $strongColor;
+      > i {
+        font-size: 30px;
+        color: $hoverColor;
+      }
+    }
+    > figure:nth-child(even) {
+      justify-content: left;
+      > figcaption {
+        @include flexColumn;
+        font-size: 20px;
+        border-radius: 15px 15px 15px 0;
+        color: $fontColor;
+        background-color: ghostwhite;
+        row-gap: 2vh;
+        padding: 3%;
+      }
+    }
+    >figure:nth-child(odd) {
+      justify-content: right;
+      flex-direction: row-reverse;
+      > i {
+        color: $hoverColor;
+      }
+      > figcaption {
+        @include flexColumn;
+        font-size: 20px;
+        border-radius: 15px 15px 0 15px;
+        color: $fontColor;
+        background-color: whitesmoke;
+        row-gap: 2vh;
+        padding: 3%;
+      }
+      article {
+        @include flexColumn;
+        text-align: right;
+      }
+    }
+  }
+  .package {
+    display: flex;
+    row-gap: 4vh;
+    width: 95%;
+    > section {
+      width: 100%;
+      @include flexColumn;
+      @include center;
+      row-gap: 2vh;
+      > p {
+        width: 90%;
+        text-align: center;
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+    }
+    > blockquote {
+      @include flexColumn;
+      @include center;
+      flex-wrap: wrap;
+      row-gap: 3vh;
+      width: 95%;
+    }
+    aside {
+      @include flexColumn;
+      @include center;
+      text-align: center;
+      row-gap: 3vh;
+      height: 40vh;
+      width: 100%;
+      background-color: #1c65b9;
+      > article {
+        font-size: 20px;
+      }
+    }
+    h3 {
+      color: whitesmoke;
+      font-size: 25px;
+    }
+    h4 {
+      color: whitesmoke;
+      font-size: 20px;
+    }
+    section {
+      display: flex;
+      @include center;
+      width: 100%;
+      > a {
+        display: flex;
+        @include center;
+        font-size: 20px;
+        width: 25%;
+        height: 4vh;
+        border-radius: 5px;
+        color: black;
+        text-decoration: none;
+        background-color: whitesmoke;
+        font-weight: 600;
+      }
+    }
+
+  }
+}

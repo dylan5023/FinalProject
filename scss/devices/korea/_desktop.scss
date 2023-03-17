@@ -1,0 +1,122 @@
+// DESKTOP VERSION
+@media (min-width: $desktop) {
+  .korean {
+    > section {
+      > aside {
+        column-gap: 15vh;
+      }
+    }
+    strong {
+      font-size: 70px;
+    }
+    span {
+      font-size: 40px;
+    }
+  }
+  .korea {
+    row-gap: 8vh;
+  }
+  .intro {
+    > figure {
+      flex-direction: row;
+      > figcaption {
+        width: 60%;
+      }
+    }
+    img {
+      width: 20%;
+      height: 100%;
+    }
+  }
+  .assignment {
+    width: 100%;
+    background-image: url(/korea_img/bg_korean.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(110, 105, 105, .6);
+    row-gap: 4vh;
+    > section {
+      padding: 3% 0;
+      row-gap: 4vh;
+      height: 100%;
+      background-color: rgba(110, 105, 105, .7);
+      p {
+        color: ghostwhite;
+        font-size: 32px;
+      }
+    }
+    > figure {
+      width: 100%;
+      background-color: rgba(110, 105, 105, .7);
+      > i {
+        padding: 0 2%;
+        font-size: 70px;
+      }
+      h4 {
+        font-size: 40px;
+      }
+      h6 {
+        font-size: 35px;
+      }
+      >figcaption {
+        box-shadow: 15px 15px 7px black;
+      }
+      &:hover {
+        background-color: rgba(35, 61, 104, 0.5);
+        color: $hoverColor;
+      }
+    }
+    h2 {
+      color: ghostwhite;
+    }
+    a {
+      width: 40%;
+      font-size: 35px;
+    }
+  }
+  .package {
+    section {
+      > a{
+        font-size: 30px;
+        width: 40%;
+      }
+    }
+    width: 100%;
+    > section {
+      row-gap: 4vh;
+      h2 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 35px;
+      }
+    }
+    > blockquote {
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 3% 0;
+      background-color: $mainColor;
+      width: 100%;
+    }
+    aside {
+      border: 5px solid dimgray;
+      width: 30%;
+      row-gap: 4vh;
+      > article {
+        @include flexColumn;
+        row-gap: 3vh;
+      }
+    }
+    h3 {
+      font-size: 40px;
+    }
+    h5 {
+      font-size: 30px;
+    }
+    h6 {
+      font-size: 25px;
+    }
+  }
+}
