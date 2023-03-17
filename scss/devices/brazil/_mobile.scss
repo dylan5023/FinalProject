@@ -38,6 +38,7 @@
     .assignments,
     .packages {
         @include flexColumn;
+        row-gap: 5vh;
         width: 90%;
     }
 
@@ -80,10 +81,8 @@
     
     // ASSIGNMENTS
     .assignments {
-        row-gap: 5vh;
-
         > article {
-            row-gap: 10vh;
+            row-gap: 7vh;
         }
         
         figure {
@@ -129,8 +128,8 @@
         }
 
         img {
-            width: 25vh;
-            height: 25vh;
+            width: 20vh;
+            height: 20vh;
         }
 
         a {
@@ -141,6 +140,139 @@
             padding: 5%;
             width: 100%;
             text-align: center;
+        }
+
+    }
+
+    // PACKAGES
+    .packages {
+        align-items: center;
+        padding-bottom: 10vh;
+        > article {
+            row-gap: 10vh;
+            width: 98%;
+        }
+
+        h2 {
+            width: 70%;
+        }
+
+        section {
+            @include flexColumn;
+            justify-content: center;
+            align-items: center;
+            border-radius: 7px;
+            height: 95vh;
+            background-color: gainsboro;
+            > aside {
+                align-items: center;
+                height: 17vh;
+                border-radius: 7px 7px 0px 0px;
+                color: whitesmoke;
+                justify-content: center;
+                width: 100%;
+                background-color: $mainColor;
+            }        
+        }
+
+        ul {
+            list-style-type: inherit;
+            @include flexColumn;
+            row-gap: 1vh;
+            width: 70%;
+            color: $fontColor;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        
+        .plans {
+            @include flexColumn;
+            justify-content: center;
+            row-gap: 18vh;
+        }
+
+        a {
+            background-color: $mainColor;
+            color: whitesmoke;
+            width: 50%;
+            text-align: center;
+            padding: 3%;
+            border-radius: 4px;
+        }
+
+        p {
+            color: $fontColor;
+            font-size: 25px;
+        }
+
+        small {
+            color: $fontColor;
+            font-size: 17px;
+            color: $mainColor;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;            
+        }
+
+        .plans-2 {
+            @include flexColumn;
+            justify-content: center;
+            row-gap: 8vh;
+            > p {
+                font-size: inherit;
+                color: goldenrod;
+                font-weight: 800;
+            }
+
+            aside {
+                flex-direction: row;
+                column-gap: 1vh;
+                > p {
+                    font-size: 22px;
+                    font-weight: 800;
+                }
+            }
+
+            .price {
+                text-decoration: line-through;
+                color: $aColor;
+            }
+        }
+
+        .value {
+            height: 5vh;
+            width: 92%;
+            padding: 2vh;
+            background-color: goldenrod;
+            color: $fontColor;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 7px;
+        }
+
+        .plans-3 {
+            @include flexColumn;
+            justify-content: center;
+            row-gap: 3vh;
+            > p {
+                font-size: inherit;
+                color: goldenrod;
+                font-weight: 800;
+            }
+
+            aside {
+                flex-direction: row;
+                column-gap: 1vh;
+                > p {
+                    font-size: 22px;
+                    font-weight: 800;
+                }
+            }
+
+            .price {
+                text-decoration: line-through;
+                color: $aColor;
+            }
         }
     }
 }
