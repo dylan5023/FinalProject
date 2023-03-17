@@ -26,11 +26,16 @@
       p {
           font-size: 27px;
       }
+
+      img {
+          width: 50vh;
+          height: 33vh;
+      }
   }
 
   // ASSIGNMENTS
   .assignments {
-      width: 97%;
+      width: 95%;
       > p {
           font-size: 25px;
       }
@@ -58,6 +63,11 @@
           }
       }
 
+      img {
+          width: 15vh;
+          height: 15vh;
+      }
+
       h3 {
           font-size: 37px;
       }
@@ -82,6 +92,91 @@
           font-size: 22px;
           
       }
-
   }
+
+    // PACKAGES
+    .packages {
+        width: 95%;
+        section {
+            height: 47vh;
+            width: 70%;
+            transition: .6s;
+            &:hover {
+                overflow: hidden;
+                scale: 1.01;
+            }
+            > aside {
+                height: 10vh;
+            }
+        }
+
+        a {
+            transition: .4s;
+            &:hover {
+                background-color: whitesmoke;
+                color: $mainColor;
+                border: 1px solid $mainColor;
+                font-weight: 800;
+            }
+        }
+
+        article {
+            flex-direction: row;
+            column-gap: 1.3vh;
+        }
+
+        .plans {
+            row-gap: 10vh;
+        }
+
+        .plans-2 {
+            row-gap: 3.2vh;
+        }
+
+        .value {
+            height: 4.3vh;
+        }
+
+        ul {
+            width: 100%;
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        small {
+            font-size: 15px;
+        }
+        
+      }
+      
+          .plans-2 {
+              aside {
+                > p {
+                  font-size: 18px;
+                }
+              }
+
+                > p {
+                    font-size: 15px;
+                  }
+          }
+
+          .plans-3 {
+              row-gap: .7vh;
+              > ul {
+                  padding-bottom: 1vh;
+              }
+              aside {
+                  > p {
+                      font-size: 18px;
+                  }
+              }
+    
+              > p {
+                  font-size: 13px;
+              }
+          }
 }
