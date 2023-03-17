@@ -54,9 +54,6 @@
         @include center;
         font-size: 23px;
         transition: .5s;
-        &:hover {
-          color: deepskyblue;
-        }
       }
     }
   }
@@ -112,10 +109,6 @@
       font-weight: 700;
       transition: .5s;
     }
-    a:hover {
-      color: deepskyblue;
-      background-color: $mainColor;
-    }
   }
   summary {
     border: 1px solid gainsboro;
@@ -123,10 +116,6 @@
     font-size: 26px;
     transition: .5s;
     color: dimgray;
-    &:hover {
-      background-color: $mainColor;
-      color: whitesmoke;
-    }
   }
 
   // HEADER 
@@ -142,7 +131,7 @@
       align-items: center;
       height: 100%;
       width: 100%;
-      background-color: rgba(231, 228, 228, 0.5);
+      background-color: rgba(135, 130, 130, 0.7);
       > aside {
         display: flex;
         padding-left: 2vh;
@@ -169,10 +158,6 @@
       height: 5vh;
       font-weight: 600;
       font-size: 17px;
-      &:hover {
-        background-color: $fontColor;
-        color: deepskyblue;
-      }
     }
   }
   // HEADER END 
@@ -203,7 +188,25 @@
       }
       [class*="fa-"]{
         font-size: 35px;
+        &:hover {
+          color: deepskyblue;
+        }
       }
+    }
+  }
+  details{
+    a {
+      font-size: 35px;
+    }
+    a:hover {
+      color: deepskyblue;
+      background-color: $mainColor;
+    }
+  }
+  summary {
+    &:hover {
+      background-color: $mainColor;
+      color: whitesmoke;
     }
   }
   // HEADER 
@@ -222,22 +225,66 @@
     a {
       width: 25%;
       font-size: 25px;
+      &:hover {
+        background-color: $fontColor;
+        color: deepskyblue;
+      }
     }
   }
   // HEADER END 
 }
 @media (min-width: $desktop) {
   // NAV 
+
+  body {
+    > aside {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: $mainColor;
+      width: 100%;
+      height: 10vh;
+      color: $fontColor;
+      > ul {
+        display: flex;
+        width: 50%;
+        font-weight: 600;
+      }
+     
+      li {
+        display: flex;
+        width: 100%;
+        list-style: none;
+      }
+      a {
+        font-size: 27px;
+        color: whitesmoke;
+        text-decoration: none;
+        transition: .5s;
+      }
+      i {
+        color: whitesmoke;
+        text-decoration: none;
+      }
+      [class*="fa-"]{
+        display: flex;
+        @include center;
+        font-size: 30px;
+        transition: .5s;
+      }
+    }
+  }
+
   body {
     > nav {
       i {
         font-size: 40px;
       }
       h2 {
-        font-size: 40px;
+        font-size: 35px;
       }
       > aside {
-        column-gap: 2vh;
+        flex-direction: row;
       }
     }
   }
@@ -256,7 +303,8 @@
     > ul {
       display: flex;
       @include center;
-      width: 70%;
+      width: 75%;
+      column-gap: 7vh;
       height: 100%;
       > li {
         display: flex;
@@ -297,4 +345,3 @@
   }
   // HEADER END 
 }
-

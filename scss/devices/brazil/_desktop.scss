@@ -1,15 +1,41 @@
 @media (min-width: $desktop) {
   .brazil {
-    > section {
-      > aside {
-        column-gap: 15vh;
-      }
+      > section {
+          > aside {
+            column-gap: 15vh;
+          }
     }
+
     strong {
-      font-size: 70px;
+        font-size: 70px;
     }
+
     span {
-      font-size: 40px;
+        font-size: 40px;
     }
+  }
+
+  // INTRODUCTION 
+  .introduction {
+      width: 95%;
+      figure {
+          flex-direction: row;
+          column-gap: 5vh;
+          background-color: gainsboro;
+          border-radius: 15px;
+      }
+
+      img {
+          width: 70vh;
+          height: 50vh;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+
+      p {
+          font-size: 20px;
+      }
   }
 }
