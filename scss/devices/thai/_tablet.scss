@@ -1,0 +1,239 @@
+// TABLET VERSION
+@media (min-width: $tablet) {
+    .thai {
+        > section {
+            > aside {
+                column-gap: 6vh;
+            }
+        }
+
+        strong {
+          font-size: 60px;
+        }
+
+        span {
+          font-size: 40px;
+        }
+    }
+
+    // INTRODUCE
+    .introduce {
+        align-items: center;
+        > figure {
+            background-color: gainsboro;
+            // padding-left: 2%;
+            width: 95%;
+            flex-direction: row-reverse;
+        }
+
+        figcaption {
+            row-gap: 1vh;
+        }
+
+        h2 {
+            width: 70%;
+            font-size: 40px;
+        }
+
+        img {
+            width: 40%;
+            height: 35vh;
+        }
+
+        small {
+            font-size: 14px;
+        }
+
+        a {
+            width: 40%;
+            height: 3vh;
+            transition: .4s;
+            &:hover {
+                color: $hoverColor;
+                background-color: $fontColor;
+            }
+        }
+    }
+
+    .nattar {
+        flex-direction: row;
+        column-gap: 4vh;
+        align-items: flex-start;
+        
+        > article {
+           width: 70%; 
+        }
+
+        h3 {
+            font-size: 36px;
+        }
+
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+    }
+
+    .languages {
+        row-gap: 1vh;
+        padding-top: 5vh;
+        > li {
+            height: 3vh;
+        }
+
+        small {
+            font-size: 11px
+        }
+    }
+
+
+
+    // WEEKLY
+    .weekly {
+        width: 100%;
+        padding-bottom: 5vh;
+        h2 {
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        > section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 3vh;
+            row-gap: 3vh;
+            width: 90%;
+        }
+
+        figure {
+            width: 45%;
+            height: 30vh;
+            display: flex;
+            overflow-y: hidden;
+            justify-content: flex-end;
+            position: relative;
+            &:hover figcaption {
+                height: 100%;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            position: absolute;
+        }
+
+        h4 {
+            font-size: 30px;
+            
+        }
+
+        figcaption {
+            position: absolute;
+            display: flex;
+            @include center;
+            width: 100%;
+            height: 0%;
+            text-align: center;
+            overflow-y: hidden;
+            background-color: rgba(229, 228, 237, 0.8);
+            row-gap: 1vh;
+            color: white;
+            z-index: 2;
+            transition: .4s;
+            > h3 {
+                width: 80%;
+                font-size: 18px;
+                font-weight: 800;
+                color: dimgray;
+            }
+
+        }
+
+        a {
+            width: 4vh;
+            height: 4vh;
+            display: flex;
+            @include center;
+            border-radius: 50%;
+            transition: .4s;
+
+            &:hover {
+                background-color: whitesmoke;
+                border: none;
+                color: $mainColor;
+                
+            }
+        }
+
+        
+    }
+    
+
+    // PRICE
+    .price {
+        padding-bottom: 5vh;
+        > article {
+            height: 20vh;
+            h2 {
+                font-size: 45px;
+            }
+
+        }
+
+        > section {
+            align-items: center;
+            width: 95%;
+            flex-direction: row;
+            column-gap: 2vh;
+
+            > aside:nth-child(3) {
+                scale: 1.1;
+            }
+
+            > aside:hover {
+                background-color: $aColor;
+            }
+
+          
+        }
+
+        i {
+            display: flex;
+            color: $fontColor;
+        }
+
+        h4 {
+            font-size: 26px;
+        }
+
+        strong {
+            font-size: 40px;
+            font-weight: 800;
+            color: #dbecea;
+        }
+
+        a {
+            transition: .4s;
+            &:hover {
+                color: $hoverColor;
+                background-color: $mainColor;
+            }
+            
+
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+
+    }
+}
