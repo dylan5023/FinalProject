@@ -106,18 +106,30 @@
 
         section {
             > aside {
-                height: 14vh;
+                height: 10vh;
             }
         }
 
+        h3 {
+            font-size: 15px;
+        }
+
+        span {
+            font-size: 15px;
+        }
+
         .value {
-            height: 6vh;
+            height: 5vh;
         }
       }
 
-      ul {
-          row-gap: 0.5vh;
-      }
+        ul {
+            row-gap: 0.5vh;
+        }
+
+        p {
+            font-weight: 700;
+        }
   }
 
 }

@@ -169,6 +169,7 @@
                 height: 15vh;
                 border-radius: 7px 7px 0px 0px;
                 color: whitesmoke;
+                @include flexColumn;
                 justify-content: center;
                 width: 100%;
                 background-color: $mainColor;
@@ -203,6 +204,7 @@
         p {
             color: $fontColor;
             font-size: 25px;
+            font-weight: 700;
         }
 
         small {
@@ -246,7 +248,7 @@
         }
         
         aside {
-            flex-direction: row;
+            display: flex;
             column-gap: 1vh;
             > p {
                 font-size: 22px;
@@ -266,7 +268,7 @@
         }
         
         aside {
-            flex-direction: row;
+            display: flex;
             column-gap: 1vh;
             > p {
                 font-size: 22px;
