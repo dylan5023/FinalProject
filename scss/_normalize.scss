@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin:0;
+  padding:0;
+  font-family: $font;
+}
+
+main,
+main > section,
+main > section > article,
+footer,
+form {
+    @include flexColumn;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5;
+  color: $fontColor;
+}

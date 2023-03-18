@@ -1,0 +1,182 @@
+@media (min-width: $tablet) {
+  .brazil {
+    > section {
+      > aside {
+        column-gap: 6vh;
+      }
+    }
+    strong {
+      font-size: 60px;
+    }
+    span {
+      font-size: 40px;
+    }
+  }
+
+  h2 {
+      font-size: 45px;
+  }
+
+  // INTRODUCTION
+  .introduction {
+      h1 {
+          font-size: 60px;
+      }
+
+      p {
+          font-size: 27px;
+      }
+
+      img {
+          width: 50vh;
+          height: 33vh;
+      }
+  }
+
+  // ASSIGNMENTS
+  .assignments {
+      width: 95%;
+      > p {
+          font-size: 25px;
+      }
+
+      > article {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          column-gap: 2vh;
+          row-gap: 3vh;
+      }
+
+      figure {
+          width: 32%;
+          transition: .6s;
+          &:hover {
+              scale: 1.03;
+          }
+      }
+
+      figcaption {
+          transition: .6s;
+          &:hover {
+              color: $hoverColor;
+          }
+      }
+
+      img {
+          width: 15vh;
+          height: 15vh;
+      }
+
+      h3 {
+          font-size: 37px;
+      }
+
+      aside {
+          font-size: 27px;
+          row-gap: 1vh;
+          > p {
+              font-size: 28px;
+          }
+
+          > a {
+              transition: .6s;
+              &:hover {
+                background-color: $hoverColor;
+                color: whitesmoke;
+              }
+          }
+      }
+
+      small {
+          font-size: 22px;
+          
+      }
+  }
+
+    // PACKAGES
+    .packages {
+        width: 95%;
+        section {
+            height: 47vh;
+            width: 70%;
+            transition: .1s;
+            &:hover {
+                overflow: hidden;
+                scale: 1.01;
+            }
+            > aside {
+                height: 10vh;
+            }
+        }
+
+        a {
+            transition: .4s;
+            &:hover {
+                background-color: whitesmoke;
+                color: $mainColor;
+                border: 1px solid $mainColor;
+                font-weight: 800;
+            }
+        }
+
+        article {
+            flex-direction: row;
+            column-gap: 1.3vh;
+        }
+
+        .plans {
+            row-gap: 10vh;
+        }
+
+        .plans-2 {
+            row-gap: 3.2vh;
+        }
+
+        .value {
+            height: 4.3vh;
+        }
+
+        ul {
+            width: 100%;
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        small {
+            font-size: 15px;
+        }
+        
+      }
+      
+          .plans-2 {
+              aside {
+                > p {
+                  font-size: 18px;
+                }
+              }
+
+                > p {
+                    font-size: 15px;
+                  }
+          }
+
+          .plans-3 {
+              row-gap: .7vh;
+              > ul {
+                  padding-bottom: 1vh;
+              }
+              aside {
+                  > p {
+                      font-size: 18px;
+                  }
+              }
+    
+              > p {
+                  font-size: 13px;
+              }
+          }
+}

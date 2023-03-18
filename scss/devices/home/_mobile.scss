@@ -1,0 +1,303 @@
+// MOBILE VERSION
+@media (min-width: $mobile) {
+  
+  // ABOUT
+  .about,
+  .team,
+  .subject,
+  .method {
+      @include flexColumn;
+  }
+
+  .about {
+      align-items: center;
+      width: 90%;
+      row-gap: 4vh;
+      padding-top: 7vh;
+      > article {  
+          @include flexColumn;
+          align-items: center;
+          row-gap: 3vh;
+          text-align: center;
+        }
+        
+      h6 {
+          border: 2px solid $strongColor;
+          width: 60%;
+      }
+
+      span {
+          color: $hoverColor;
+      }
+
+      strong {
+          font-size: 22px;
+          color: $mainColor;
+          text-align: center;
+          padding-top: 3vh;
+      }
+
+      h2 {
+          font-size: 25px;
+          text-align: center;
+          font-weight: 800;
+      }
+
+      h4 {
+          font-size: 17px;
+      }
+  }
+
+  // ABOUT SUBJECT
+  .subject {
+      figure {
+          width: 100%;
+          @include flexColumn;
+      }
+
+      img {
+          width: 100%;
+      }
+
+      figcaption {
+          @include flexColumn;
+          align-items: center;
+          row-gap: 3vh;
+      }
+
+      a {
+        color: whitesmoke;
+        background-color: $mainColor;
+        font-weight: 600;
+        width: 35%;
+        text-align: center;
+        padding: 1vh;
+      }
+
+      p {
+        font-weight: 500;
+      }
+  }
+
+  // ABOUT METHOD
+  .method {
+      aside {
+          @include flexColumn;
+          @include center;
+          row-gap: 2vh;
+          text-align: center;
+          background-color: $mainColor;
+          height: 40vh;
+          padding: 4vh;
+      }
+
+      h4 {
+          padding-bottom: 3vh;
+      }
+
+      p, i {
+          color: gainsboro;
+      }
+
+      h3 {
+          color: lightskyblue;
+          font-size: 20px;
+      }
+
+      i {
+          font-size: 50px;
+      }
+  }
+
+  // ABOUT TEAM
+  .team {
+      > article {
+          @include flexColumn;
+          row-gap: 5vh;
+      }
+        
+      > h3 {
+          color: $fontColor;
+          font-weight: 700;
+          font-size: 22px;
+      }
+
+      h4 {
+          color: black;
+      }
+
+      figure {
+          @include flexColumn;
+          width: 100%;
+      }
+
+      img {
+          width: 100%;
+          height: 40vh;
+      }
+
+      figcaption {
+          @include flexColumn;
+          background-color: gainsboro;
+          padding: 3vh;
+          > h4 {
+              font-weight: 800;
+              font-size: 20px;
+          }
+      }
+
+      aside {
+          display: none;
+      }
+
+      ul {
+          display: flex;
+          justify-content: center;
+      }
+
+      small {
+          font-weight: 600;
+      }
+
+      .korea {
+          color: red;
+      }
+
+      .brazil {
+          color: green;
+      }
+
+      .thailand {
+          color: blue;
+      }
+  }
+
+  // CONTACT
+  .contact {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    @include center;
+    row-gap: 5vh;
+    background-color: $mainColor;
+
+    > article {
+      @include center;
+      row-gap: 1vh;
+    }
+    
+    h2 {
+      font-size: 40px;
+      font-weight: 800;
+      color: $fontColor;
+    }
+    
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: $mainColor;
+    }
+
+    h4 {
+      font-size: 18px; 
+    }
+
+    small {
+      font-size: 16px;
+      font-weight: 400;
+      color: $fontColor;
+    }
+
+    > section {
+      @include flexColumn;
+      width: 85%;
+      row-gap: 5vh;
+    }
+       
+    ul {
+      @include flexColumn;
+      row-gap: 3vh;
+      padding: 2%;
+    }
+
+    li {
+      display: flex;
+      text-align: left;
+      align-items: center;
+      column-gap: 2vh;
+      row-gap: 1vh;
+      
+    }
+
+    aside {
+      @include flexColumn;
+    }
+
+    a, time {
+      color: whitesmoke;
+      font-style: normal;
+      font-size: 16px;
+    
+    }
+
+    a {
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
+    }
+
+    i {
+      font-size: 22px;
+      color: $fontColor;
+    }
+  }
+  
+  form {
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    row-gap: 2vh;
+    width: 100%;
+    text-align: center; 
+    align-items: center;  
+    background-color: white; 
+    
+    > article {
+      @include flexColumn;
+      row-gap: 1vh;
+      
+    }
+
+    > aside {
+      @include flexColumn;
+      align-items: center;
+      row-gap: 2vh;
+      width: 100%;
+    }
+
+    [type="submit"] {
+      background-color: $strongColor ;
+      color: whitesmoke;
+      border: none;
+      font-size: 16px;
+      transition: .5s;
+        &:hover {
+          color: deepskyblue;
+        }
+    }
+
+  }
+
+  input, textarea {
+    padding: 2vh;
+    width: 80%;
+    border: 1px solid dimgray;
+  }
+  
+}
+
+
+
+
+
+

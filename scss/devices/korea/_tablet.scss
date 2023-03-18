@@ -1,0 +1,122 @@
+// TABLET VERSION
+@media (min-width: $tablet) {
+  .korean {
+    > section {
+      > aside {
+        column-gap: 6vh;
+      }
+    }
+    strong {
+      font-size: 60px;
+    }
+    span {
+      font-size: 40px;
+    }
+  }
+  .intro {
+    img {
+      width: 40%;
+      height: 35vh;
+    }
+    > figure {
+      > figcaption {
+        row-gap: 4vh;
+      }
+      h4 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 30px;
+      }
+      span {
+        font-size: 30px;
+        font-weight: 800;
+      }
+      a {
+        width: 35%;
+        font-size: 28px;
+        &:hover {
+          color: deepskyblue;
+          background-color: $fontColor;
+        }
+      }
+    }
+  }
+  .assignment {
+    h2 {
+      font-size: 45px;
+    }
+    a {
+      &:hover {
+        color: deepskyblue;
+        background-color: $fontColor;
+      }
+    }
+    > section {
+      > p {
+        font-size: 30px;
+      }
+    }
+    > figure {
+      &:hover {
+        background-color: $mainColor;
+        color: $hoverColor;
+      }
+      > i {
+        font-size: 60px;
+        text-shadow: 10px 10px black;
+      }
+      h4 {
+        font-size: 35px;
+      }
+      h6 {
+        font-size: 30px;
+      }
+    }
+    a {
+      width: 35%;
+      height: 5vh;
+      font-size: 30px;
+    }
+  }
+  .package{
+    aside {
+      height: 50vh;
+      row-gap: 5vh;
+      &:hover {
+        background-color: $strongColor;
+        color: $hoverColor;
+      }
+    }
+    section {
+      > a {
+        font-size: 40px;
+        height: 100%;
+        &:hover {
+          color: $hoverColor;
+          background-color: $strongColor;
+        }
+      }
+    }
+    > section {
+      h2 {
+        font-size: 45px;
+      }
+      > p {
+        font-size: 30px;
+      }
+    }
+    h3 {
+      font-size: 45px;
+    }
+    h4 {
+      font-size: 40px;
+    }
+    h5 {
+      font-size: 35px;
+    }
+    h6 {
+      font-size: 30px;
+    }
+  }
+}

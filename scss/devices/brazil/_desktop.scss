@@ -1,0 +1,135 @@
+@media (min-width: $desktop) {
+  .brazil {
+      > section {
+          > aside {
+            column-gap: 15vh;
+          }
+    }
+
+    strong {
+        font-size: 70px;
+    }
+
+    span {
+        font-size: 40px;
+    }
+  }
+
+  h2 {
+      font-size: 35px;
+  }
+
+  // INTRODUCTION 
+  .introduction {
+      width: 95%;
+      figure {
+          flex-direction: row;
+          column-gap: 5vh;
+          background-color: gainsboro;
+          border-radius: 15px;
+      }
+
+      figcaption {
+          padding: 3%;
+      }
+
+      img {
+          width: 70vh;
+          height: 50vh;
+          border-radius: 15px 0px 0px 15px;
+      }
+
+      h1 {
+          font-size: 50px;
+      }
+
+      p {
+          font-size: 18px;
+         
+      }
+  }
+
+  // ASSIGNMENTS
+  .assignments {      
+      width: 95%;
+      align-items: center;
+      row-gap: 10vh;
+      p {
+          font-size: 23px;
+          width: 70%;
+      }
+
+      h3 {
+          font-size: 30px;
+      }
+
+      aside {
+        font-size: 20px;
+        row-gap: 1vh;
+        > p {
+            font-size: 20px;
+        }
+      }
+
+      small {
+          font-size: 18px;
+      }
+
+      > article {
+          flex-wrap: nowrap;
+          column-gap: 4vh;
+          width: 100%;
+          padding-top: 5vh;
+      }
+
+      figure {
+          width: 15%;
+          padding: 4%;
+      }
+
+      figcaption {
+          row-gap: 7vh;
+      }
+  }
+
+  // PACKAGES
+  .packages {
+      row-gap: 10vh;
+      padding-bottom: 20vh;
+      > article {
+          justify-content: space-between;
+        > section {
+            height: 57vh;
+            width: 25%;
+            padding-bottom: 4vh;
+        }
+
+        section {
+            > aside {
+                height: 10vh;
+            }
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        span {
+            font-size: 15px;
+        }
+
+        .value {
+            height: 5vh;
+        }
+      }
+
+        ul {
+            row-gap: 0.5vh;
+        }
+
+        p {
+            font-weight: 700;
+        }
+  }
+
+}
