@@ -25,7 +25,6 @@
 
     figure,
     figcaption,
-    aside,
     main > article > section {
         @include flexColumn;
     }
@@ -98,6 +97,9 @@
             row-gap: 3vh;
             width: 100%;
             color: whitesmoke;
+            > aside {
+                @include flexColumn;
+            }
         }
 
         aside {
