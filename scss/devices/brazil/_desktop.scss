@@ -52,8 +52,11 @@
   // ASSIGNMENTS
   .assignments {      
       width: 95%;
+      align-items: center;
+      row-gap: 10vh;
       p {
           font-size: 23px;
+          width: 70%;
       }
 
       h3 {
@@ -87,7 +90,34 @@
       figcaption {
           row-gap: 7vh;
       }
-  
-}
+  }
+
+  // PACKAGES
+  .packages {
+      row-gap: 10vh;
+      padding-bottom: 20vh;
+      > article {
+          justify-content: space-between;
+        > section {
+            height: 57vh;
+            width: 25%;
+            padding-bottom: 4vh;
+        }
+
+        section {
+            > aside {
+                height: 14vh;
+            }
+        }
+
+        .value {
+            height: 6vh;
+        }
+      }
+
+      ul {
+          row-gap: 0.5vh;
+      }
+  }
 
 }
