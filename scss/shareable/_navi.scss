@@ -235,16 +235,56 @@
 }
 @media (min-width: $desktop) {
   // NAV 
+
+  body {
+    > aside {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: $mainColor;
+      width: 100%;
+      height: 10vh;
+      color: $fontColor;
+      > ul {
+        display: flex;
+        width: 50%;
+        font-weight: 600;
+      }
+     
+      li {
+        display: flex;
+        width: 100%;
+        list-style: none;
+      }
+      a {
+        font-size: 27px;
+        color: whitesmoke;
+        text-decoration: none;
+        transition: .5s;
+      }
+      i {
+        color: whitesmoke;
+        text-decoration: none;
+      }
+      [class*="fa-"]{
+        display: flex;
+        @include center;
+        font-size: 30px;
+        transition: .5s;
+      }
+    }
+  }
+
   body {
     > nav {
       i {
         font-size: 40px;
       }
       h2 {
-        font-size: 40px;
+        font-size: 35px;
       }
       > aside {
-        column-gap: 2vh;
+        flex-direction: row;
       }
     }
   }
@@ -263,7 +303,8 @@
     > ul {
       display: flex;
       @include center;
-      width: 70%;
+      width: 75%;
+      column-gap: 7vh;
       height: 100%;
       > li {
         display: flex;
@@ -304,4 +345,3 @@
   }
   // HEADER END 
 }
-

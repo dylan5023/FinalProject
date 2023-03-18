@@ -1,0 +1,275 @@
+@media (min-width: $mobile) {
+    // HEADER BRAZIL
+    .brazil {
+        > section {
+          justify-content: center;
+          > aside {
+            display: flex;
+            flex-direction: row;
+            column-gap: 5vh;
+            @include center;
+          }
+        }
+        strong {
+          color: whitesmoke;
+          font-weight: 600;
+          font-size: 35px;
+          border-bottom: 3px solid whitesmoke;
+        }
+        span {
+          font-size: 18px;
+          color: $mainColor;
+          font-weight: 600;
+        }
+    }
+
+    figure,
+    figcaption,
+    aside,
+    main > article > section {
+        @include flexColumn;
+    }
+
+    .introduction,
+    .assignments,
+    .packages {
+        @include flexColumn;
+        row-gap: 5vh;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    // INTRODUTION
+    .introduction {
+        padding-top: 10vh;
+
+        > figure {
+            row-gap: 5vh;
+            width: 100%;
+            align-items: center;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 35px;
+        }
+        
+        img {
+            width: 43vh;
+            height: 28vh;
+            border-radius: 15px;
+        }
+        
+        figcaption {
+            row-gap: 4vh;
+            text-align: center;
+            :last-child {
+                color: $mainColor;
+                font-weight: 600;
+            }
+        }
+    }
+    
+    // ASSIGNMENTS
+    .assignments {
+        > article {
+            row-gap: 7vh;
+        }
+        
+        figure {
+            background-color: $strongColor;
+            border-radius: 20px;
+            width: 84%;
+            align-items: center;
+            row-gap: 2vh;
+            padding: 8%;
+        }
+
+        figcaption {
+            align-items: center;
+            row-gap: 3vh;
+            width: 100%;
+            color: whitesmoke;
+        }
+
+        aside {
+            align-items: center;
+            row-gap: 5px;
+
+            > p {
+                color: $fontColor;  
+                font-weight: 700;
+                font-size: 17px;
+            }
+        }
+
+        small {
+            color: $fontColor;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+
+        h3 {
+           font-size: 24px;
+        }
+        
+        h4 {
+            letter-spacing: 2px;
+        }
+
+        img {
+            width: 20vh;
+            height: 20vh;
+        }
+
+        a {
+            color: $fontColor;
+            background-color: whitesmoke;
+            text-transform: uppercase;
+            font-weight: 800;
+            padding: 5%;
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    // PACKAGES
+    .packages {
+        align-items: center;
+        padding-bottom: 10vh;
+        > article {
+            row-gap: 10vh;
+            width: 98%;
+        }
+
+        h2 {
+            width: 70%;
+        }
+
+        section {
+            @include flexColumn;
+            @include center;
+            border-radius: 7px;
+            height: 95vh;
+            background-color: gainsboro;
+            > aside {
+                align-items: center;
+                height: 15vh;
+                border-radius: 7px 7px 0px 0px;
+                color: whitesmoke;
+                justify-content: center;
+                width: 100%;
+                background-color: $mainColor;
+            }        
+        }
+
+        ul {
+            list-style-type: inherit;
+            @include flexColumn;
+            row-gap: 1vh;
+            width: 70%;
+            color: $fontColor;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        
+        .plans {
+            @include flexColumn;
+            justify-content: center;
+            row-gap: 18vh;
+        }
+
+        a {
+            background-color: $mainColor;
+            color: whitesmoke;
+            width: 50%;
+            text-align: center;
+            padding: 3%;
+            font-weight: 400;
+        }
+
+        p {
+            color: $fontColor;
+            font-size: 25px;
+        }
+
+        small {
+            color: $fontColor;
+            font-size: 17px;
+            color: $mainColor;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;            
+        }
+
+        
+        .value {
+            background-color: goldenrod;
+            color: $fontColor;
+            font-weight: 700;
+            text-shadow:1px 1px white;
+            font-size: 25px;
+            border-radius: 7px 7px 0px 0px;
+            height: 6vh;
+            display: flex;
+            @include center;
+            width: 100%;
+        }
+        
+        .dollar {
+            text-decoration: line-through;
+            color: $aColor;
+        }
+        
+    }
+    
+    .plans-2 {
+        @include flexColumn;
+        justify-content: center;
+        row-gap: 8vh;
+        > p {
+            font-size: inherit;
+            color: goldenrod;
+            font-weight: 800;
+        }
+        
+        aside {
+            flex-direction: row;
+            column-gap: 1vh;
+            > p {
+                font-size: 22px;
+                font-weight: 800;
+            }
+        }    
+    }
+
+    .plans-3 {
+        @include flexColumn;
+        justify-content: center;
+        row-gap: 3vh;
+        > p {
+            font-size: inherit;
+            color: goldenrod;
+            font-weight: 800;
+        }
+        
+        aside {
+            flex-direction: row;
+            column-gap: 1vh;
+            > p {
+                font-size: 22px;
+                font-weight: 800;
+            }
+        }
+    }
+}

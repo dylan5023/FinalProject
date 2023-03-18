@@ -217,7 +217,7 @@
     }
 
     [class*="fa-"] {
-        font-size: 28px;
+        font-size: 40px;
         transition: .5s;
         &:hover {
             color: $hoverColor;
@@ -346,6 +346,4 @@
             }
         }
     }
-
-
 }
