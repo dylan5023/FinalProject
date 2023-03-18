@@ -25,8 +25,9 @@
       a {
           transition: .6s;
           &:hover {
-              background-color: $strongColor;
-              color: navy;
+              background-color: transparent;
+              color: $mainColor;
+              border: 1px solid $mainColor;
           }
       }
 
